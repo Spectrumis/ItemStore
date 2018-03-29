@@ -1,4 +1,4 @@
 package GtuWarcraft.Items.Weapons;
 
-public class Dagger {
+public class Dagger extends Weapon {
 }

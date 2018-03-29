@@ -1,4 +1,4 @@
 package GtuWarcraft.Items.Weapons;
 
-public class Bow {
+public class Bow extends Weapon {
 }

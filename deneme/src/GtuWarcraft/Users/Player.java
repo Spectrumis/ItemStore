@@ -1,10 +1,8 @@
 package GtuWarcraft.Users;
 
-import GtuWarcraft.Item;
-
 import java.util.LinkedList;
 
-public class Player {
+public class Player extends User {
     LinkedList<Item> backPack;
 
     public void sellItem() {

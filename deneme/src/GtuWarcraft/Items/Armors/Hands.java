@@ -1,4 +1,4 @@
 package GtuWarcraft.Items.Armors;
 
-public class Hands {
+public class Hands extends Armor {
 }

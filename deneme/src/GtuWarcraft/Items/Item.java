@@ -1,4 +1,6 @@
 package GtuWarcraft.Items;
 
-public interface Item {
+public abstract class Item {
+    private String name;
+    private double price;
 }

@@ -1,7 +1,5 @@
 package GtuWarcraft.Items.Armors;
 
-import GtuWarcraft.Item;
-
-public class Legs implements Item {
+public class Legs extends Armor{
 
 }

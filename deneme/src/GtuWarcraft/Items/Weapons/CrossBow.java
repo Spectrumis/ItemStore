@@ -1,4 +1,4 @@
 package GtuWarcraft.Items.Weapons;
 
-public class CrossBow {
+public class CrossBow extends Weapon {
 }

@@ -1,4 +1,4 @@
 package GtuWarcraft.Items.ConsumableItems;
 
-public class Drinks {
+public class Drinks extends Consumable {
 }

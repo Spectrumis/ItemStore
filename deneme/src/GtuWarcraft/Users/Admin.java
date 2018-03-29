@@ -1,4 +1,4 @@
 package GtuWarcraft.Users;
 
-public class Admin {
+public class Admin extends User {
 }

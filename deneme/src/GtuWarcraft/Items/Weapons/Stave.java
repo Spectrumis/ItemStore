@@ -1,7 +1,5 @@
 package GtuWarcraft.Items.Weapons;
 
 
-import GtuWarcraft.Item;
-
-public class Stave implements Item {
+public class Stave extends Weapon {
 }

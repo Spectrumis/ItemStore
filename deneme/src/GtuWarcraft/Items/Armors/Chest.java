@@ -1,6 +1,5 @@
 package GtuWarcraft.Items.Armors;
 
-import GtuWarcraft.Item;
+public class Chest extends Armor {
 
-public class Chest implements Item {
 }

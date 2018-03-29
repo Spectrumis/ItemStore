@@ -12,105 +12,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AuctionHouse.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/World/AuctionHouse.java">
+      <file leaf-file-name="Weapon.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Weapons/Weapon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Admin.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Users/Admin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            <state relative-caret-position="84">
+              <caret line="4" column="41" lean-forward="false" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Users/Player.java">
+      <file leaf-file-name="Bow.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Weapons/Bow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Item.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            <state relative-caret-position="42">
+              <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Foods.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/ConsumableItems/Foods.java">
+      <file leaf-file-name="CrossBow.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Weapons/CrossBow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            <state relative-caret-position="42">
+              <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Drinks.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/ConsumableItems/Drinks.java">
+      <file leaf-file-name="Dagger.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Weapons/Dagger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            <state relative-caret-position="42">
+              <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cloth.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/TradeGoods/Cloth.java">
+      <file leaf-file-name="Stave.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Weapons/Stave.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="63">
+              <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Herbs.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/TradeGoods/Herbs.java">
+      <file leaf-file-name="Sword.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Weapons/Sword.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Leather.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/TradeGoods/Leather.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MetalAndStone.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/TradeGoods/MetalAndStone.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+            <state relative-caret-position="63">
+              <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -134,34 +90,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Inventory.java" />
-        <option value="$PROJECT_DIR$/src/GtuWarcraft/Character/Human.java" />
-        <option value="$PROJECT_DIR$/src/GtuWarcraft/Character/NightElf.java" />
-        <option value="$PROJECT_DIR$/src/GtuWarcraft/Character/Orc.java" />
-        <option value="$PROJECT_DIR$/src/GtuWarcraft/Character/Troll.java" />
-        <option value="$PROJECT_DIR$/src/GtuWarcraft/Character/Inventory.java" />
-        <option value="$PROJECT_DIR$/src/GtuWarcraft/Weapon/Inventory.java" />
-        <option value="$PROJECT_DIR$/src/GtuWarcraft/Weapon/Bow.java" />
         <option value="$PROJECT_DIR$/src/GtuWarcraft/Weapon/Stave.java" />
         <option value="$PROJECT_DIR$/src/GtuWarcraft/Weapon/Sword.java" />
         <option value="$PROJECT_DIR$/src/GtuWarcraft/Weapon/Weapon.java" />
         <option value="$PROJECT_DIR$/src/GtuWarcraft/Character/Character.java" />
         <option value="$PROJECT_DIR$/src/GtuWarcraft/Weapon/Item.java" />
         <option value="$PROJECT_DIR$/src/GtuWarcraft/Classes/Human.java" />
-        <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/Weapons/Bow.java" />
         <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/Armors/Item.java" />
-        <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/Item.java" />
         <option value="$PROJECT_DIR$/src/GtuWarcraft/Main.java" />
         <option value="$PROJECT_DIR$/src/GtuWarcraft/Races/NightElf.java" />
         <option value="$PROJECT_DIR$/src/GtuWarcraft/Races/Troll.java" />
         <option value="$PROJECT_DIR$/src/GtuWarcraft/Classes/Warrior.java" />
         <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/Weapon.java" />
         <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/Armor.java" />
-        <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/Weapons/Stave.java" />
-        <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/Weapons/Sword.java" />
-        <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/Armors/Legs.java" />
-        <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/Armors/Feet.java" />
-        <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/Armors/Chest.java" />
         <option value="$PROJECT_DIR$/src/GtuWarcraft/World/Arena.java" />
         <option value="$PROJECT_DIR$/src/GtuWarcraft/Classes/Mage.java" />
         <option value="$PROJECT_DIR$/src/GtuWarcraft/Races/Orc.java" />
@@ -175,11 +116,31 @@
         <option value="$PROJECT_DIR$/src/GtuWarcraft/Players/HumanMage.java" />
         <option value="$PROJECT_DIR$/src/GtuWarcraft/Players/TrollMage.java" />
         <option value="$PROJECT_DIR$/src/GtuWarcraft/Players/Player.java" />
-        <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/Armors/Armor.java" />
-        <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/Weapons/Weapon.java" />
-        <option value="$PROJECT_DIR$/src/GtuWarcraft/Item.java" />
-        <option value="$PROJECT_DIR$/src/GtuWarcraft/Users/Player.java" />
         <option value="$PROJECT_DIR$/src/GtuWarcraft/World/AuctionHouse.java" />
+        <option value="$PROJECT_DIR$/src/GtuWarcraft/Users/Person.java" />
+        <option value="$PROJECT_DIR$/src/GtuWarcraft/Users/Admin.java" />
+        <option value="$PROJECT_DIR$/src/GtuWarcraft/Users/Player.java" />
+        <option value="$PROJECT_DIR$/src/GtuWarcraft/Users/User.java" />
+        <option value="$PROJECT_DIR$/src/GtuWarcraft/Item.java" />
+        <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/Item.java" />
+        <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/Armors/Armor.java" />
+        <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/ConsumableItems/Consumable.java" />
+        <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/Armors/Chest.java" />
+        <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/Armors/Feet.java" />
+        <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/Armors/Hands.java" />
+        <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/Armors/Head.java" />
+        <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/Armors/Legs.java" />
+        <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/ConsumableItems/Bandages.java" />
+        <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/ConsumableItems/Drinks.java" />
+        <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/ConsumableItems/Elixir.java" />
+        <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/ConsumableItems/Foods.java" />
+        <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/ConsumableItems/Potions.java" />
+        <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/Weapons/Bow.java" />
+        <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/Weapons/CrossBow.java" />
+        <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/Weapons/Dagger.java" />
+        <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/Weapons/Sword.java" />
+        <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/Weapons/Stave.java" />
+        <option value="$PROJECT_DIR$/src/GtuWarcraft/Items/Weapons/Weapon.java" />
       </list>
     </option>
   </component>
@@ -189,9 +150,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
@@ -210,9 +171,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -288,7 +249,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -445,14 +406,15 @@
       <workItem from="1521874421756" duration="1204000" />
       <workItem from="1522080668853" duration="652000" />
       <workItem from="1522313811991" duration="1460000" />
+      <workItem from="1522316693724" duration="1666000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10639000" />
+    <option name="totallyTimeSpent" value="12305000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -462,46 +424,26 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23645681" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17395833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -515,75 +457,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Character/Mage.java" />
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Classes/Warrior.java" />
-    <entry file="uml://JAVA/">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="0.0" y="153.0">GtuWarcraft.Players.HumanWarrior</node>
-            <node x="142.0" y="301.0">GtuWarcraft.Races.Human</node>
-            <node x="117.0" y="375.0">GtuWarcraft.Races.Orc</node>
-            <node x="77.0" y="79.0">GtuWarcraft.Players.ElfWarrior</node>
-            <node x="0.0" y="227.0">GtuWarcraft.Players.TrollWarrior</node>
-            <node x="229.75" y="79.0">GtuWarcraft.Players.ElfMage</node>
-            <node x="275.0" y="301.0">GtuWarcraft.Main</node>
-            <node x="0.0" y="301.0">GtuWarcraft.Players.OrcMage</node>
-            <node x="107.0" y="0.0">GtuWarcraft.Players.Player</node>
-            <node x="0.0" y="375.0">GtuWarcraft.Races.Troll</node>
-            <node x="172.0" y="153.0">GtuWarcraft.Players.HumanMage</node>
-            <node x="0.0" y="0.0">GtuWarcraft.Classes.Warrior</node>
-            <node x="156.0" y="227.0">GtuWarcraft.Players.OrcWarrior</node>
-            <node x="207.0" y="0.0">GtuWarcraft.Races.NightElf</node>
-            <node x="318.0" y="0.0">GtuWarcraft.Classes.Mage</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="GtuWarcraft.Players.ElfMage" target="GtuWarcraft.Players.Player">
-              <point x="-30.33333333333333" y="-14.5" />
-              <point x="244.91666666666669" y="49.0" />
-              <point x="167.0" y="49.0" />
-              <point x="20.0" y="14.5" />
-            </edge>
-            <edge source="GtuWarcraft.Players.ElfWarrior" target="GtuWarcraft.Races.NightElf">
-              <point x="33.333333333333314" y="-14.5" />
-              <point x="160.33333333333331" y="59.0" />
-              <point x="229.75" y="59.0" />
-              <point x="-22.75" y="14.5" />
-            </edge>
-            <edge source="GtuWarcraft.Players.ElfWarrior" target="GtuWarcraft.Players.Player">
-              <point x="0.0" y="-14.5" />
-              <point x="-20.0" y="14.5" />
-            </edge>
-            <edge source="GtuWarcraft.Players.ElfMage" target="GtuWarcraft.Races.NightElf">
-              <point x="0.0" y="-14.5" />
-              <point x="22.75" y="14.5" />
-            </edge>
-            <edge source="GtuWarcraft.Players.ElfWarrior" target="GtuWarcraft.Classes.Warrior">
-              <point x="-33.33333333333334" y="-14.5" />
-              <point x="93.66666666666666" y="59.0" />
-              <point x="43.5" y="59.0" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="GtuWarcraft.Players.ElfMage" target="GtuWarcraft.Classes.Mage">
-              <point x="30.333333333333343" y="-14.5" />
-              <point x="305.58333333333337" y="59.0" />
-              <point x="357.0" y="59.0" />
-              <point x="0.0" y="14.5" />
-            </edge>
-          </edges>
-          <settings layout="Hıerarchıc Group" zoom="1.285441527446301" x="-71.0" y="153.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Classes/Mage.java" />
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Races/Orc.java" />
     <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Races/Troll.java" />
     <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Races/NightElf.java" />
     <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Players/TrollWarrior.java" />
@@ -658,41 +531,6 @@
     <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Players/TrollMage.java" />
     <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Players/ElfWarrior.java" />
     <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Players/Player.java" />
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Weapons/Sword.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Armors/Legs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Armors/Chest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="33" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Armors/Feet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Weapons/Stave.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/World/Arena.java" />
     <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Main.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -702,69 +540,224 @@
         </state>
       </provider>
     </entry>
-    <entry file="uml://JAVA/GtuWarcraft.Items">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>GtuWarcraft.Items</OriginalElement>
-          <nodes>
-            <node x="-56.770833333333314" y="-85.0">GtuWarcraft.Items.Item</node>
-            <node x="-183.47916666666666" y="-6.0">GtuWarcraft.Items.Weapon</node>
-            <node x="-24.0" y="73.0">GtuWarcraft.Items.Armors.Chest</node>
-            <node x="-125.0" y="73.0">GtuWarcraft.Items.Weapons.Sword</node>
-            <node x="166.0" y="73.0">GtuWarcraft.Items.Armors.Feet</node>
-            <node x="74.0" y="73.0">GtuWarcraft.Items.Armors.Legs</node>
-            <node x="-221.0" y="73.0">GtuWarcraft.Items.Weapons.Stave</node>
-            <node x="69.0" y="-6.0">GtuWarcraft.Items.Armor</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="GtuWarcraft.Items.Armor" target="GtuWarcraft.Items.Item">
-              <point x="0.0" y="-14.5" />
-              <point x="110.0" y="-31.0" />
-              <point x="-2.7708333333333144" y="-31.0" />
-              <point x="18.0" y="14.5" />
-            </edge>
-            <edge source="GtuWarcraft.Items.Armors.Legs" target="GtuWarcraft.Items.Armor">
-              <point x="0.0" y="-14.5" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="GtuWarcraft.Items.Weapons.Sword" target="GtuWarcraft.Items.Weapon">
-              <point x="0.0" y="-14.5" />
-              <point x="-84.5" y="48.0" />
-              <point x="-114.47916666666666" y="48.0" />
-              <point x="23.0" y="14.5" />
-            </edge>
-            <edge source="GtuWarcraft.Items.Weapons.Stave" target="GtuWarcraft.Items.Weapon">
-              <point x="0.0" y="-14.5" />
-              <point x="-183.0" y="48.0" />
-              <point x="-160.47916666666666" y="48.0" />
-              <point x="-23.0" y="14.5" />
-            </edge>
-            <edge source="GtuWarcraft.Items.Armors.Feet" target="GtuWarcraft.Items.Armor">
-              <point x="0.0" y="-14.5" />
-              <point x="201.0" y="48.0" />
-              <point x="137.33333333333331" y="48.0" />
-              <point x="27.333333333333314" y="14.5" />
-            </edge>
-            <edge source="GtuWarcraft.Items.Armors.Chest" target="GtuWarcraft.Items.Armor">
-              <point x="0.0" y="-14.5" />
-              <point x="15.0" y="48.0" />
-              <point x="82.66666666666669" y="48.0" />
-              <point x="-27.333333333333314" y="14.5" />
-            </edge>
-            <edge source="GtuWarcraft.Items.Weapon" target="GtuWarcraft.Items.Item">
-              <point x="0.0" y="-14.5" />
-              <point x="-137.47916666666666" y="-31.0" />
-              <point x="-38.770833333333314" y="-31.0" />
-              <point x="-18.0" y="14.5" />
-            </edge>
-          </edges>
-          <settings layout="Hıerarchıc Group" zoom="1.0" x="133.0" y="94.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
+    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/TradeGoods/Herbs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/TradeGoods/Leather.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/TradeGoods/MetalAndStone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/TradeGoods/Cloth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Users/User.java" />
+    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/World/AuctionHouse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Users/Admin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Users/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="33" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Users/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/ConsumableItems/Consumable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="47" lean-forward="true" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Armors/Armor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Armors/Chest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Armors/Feet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Armors/Hands.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Armors/Head.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Armors/Legs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/ConsumableItems/Bandages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/ConsumableItems/Drinks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/ConsumableItems/Elixir.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/ConsumableItems/Foods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/ConsumableItems/Potions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="39" lean-forward="false" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Weapons/Bow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Weapons/CrossBow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Weapons/Dagger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Weapons/Sword.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Weapons/Stave.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -774,14 +767,13 @@
           <ID>MODULES</ID>
           <OriginalElement>mdl-deneme</OriginalElement>
           <nodes>
-            <node x="-175.0" y="-124.0">mdl-deneme</node>
+            <node x="" y="">mdl-deneme</node>
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hıerarchıc Group" zoom="1.0" x="-214.0" y="-35.0" />
+          <settings layout="Hıerarchıc Group" zoom="1.0" x="78.0" y="18.0" />
           <SelectedNodes />
           <Categories />
-          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -791,61 +783,14 @@
           <ID>JAVA</ID>
           <OriginalElement>GtuWarcraft</OriginalElement>
           <nodes>
-            <node x="21.848484848484873" y="-30.0">GtuWarcraft.Items.Item</node>
-            <node x="-104.35984848484847" y="49.0">GtuWarcraft.Items.Weapon</node>
-            <node x="55.18181818181819" y="128.0">GtuWarcraft.Items.Armors.Chest</node>
-            <node x="-141.8181818181818" y="202.0">GtuWarcraft.World.AuctionHouse</node>
-            <node x="-45.81818181818181" y="128.0">GtuWarcraft.Items.Weapons.Sword</node>
-            <node x="153.1818181818182" y="128.0">GtuWarcraft.Items.Armors.Feet</node>
-            <node x="243.1818181818182" y="128.0">GtuWarcraft.Items.Armors.Legs</node>
-            <node x="-141.8181818181818" y="128.0">GtuWarcraft.Items.Weapons.Stave</node>
-            <node x="147.1818181818182" y="49.0">GtuWarcraft.Items.Armor</node>
-            <node x="27.181818181818187" y="202.0">GtuWarcraft.Main</node>
+            <node x="" y="">GtuWarcraft.Users</node>
+            <node x="" y="">GtuWarcraft.Items</node>
+            <node x="" y="">GtuWarcraft.World</node>
+            <node x="" y="">GtuWarcraft.Main</node>
           </nodes>
           <notes />
-          <edges>
-            <edge source="GtuWarcraft.Items.Armor" target="GtuWarcraft.Items.Item">
-              <point x="0.0" y="-14.5" />
-              <point x="188.1818181818182" y="24.0" />
-              <point x="75.84848484848487" y="24.0" />
-              <point x="18.0" y="14.5" />
-            </edge>
-            <edge source="GtuWarcraft.Items.Armors.Legs" target="GtuWarcraft.Items.Armor">
-              <point x="0.0" y="-14.5" />
-              <point x="279.1818181818182" y="103.0" />
-              <point x="215.5151515151515" y="103.0" />
-              <point x="27.333333333333314" y="14.5" />
-            </edge>
-            <edge source="GtuWarcraft.Items.Weapons.Sword" target="GtuWarcraft.Items.Weapon">
-              <point x="0.0" y="-14.5" />
-              <point x="-5.318181818181813" y="103.0" />
-              <point x="-35.35984848484847" y="103.0" />
-              <point x="23.0" y="14.5" />
-            </edge>
-            <edge source="GtuWarcraft.Items.Weapons.Stave" target="GtuWarcraft.Items.Weapon">
-              <point x="0.0" y="-14.5" />
-              <point x="-103.81818181818181" y="103.0" />
-              <point x="-81.35984848484847" y="103.0" />
-              <point x="-23.0" y="14.5" />
-            </edge>
-            <edge source="GtuWarcraft.Items.Armors.Feet" target="GtuWarcraft.Items.Armor">
-              <point x="0.0" y="-14.5" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="GtuWarcraft.Items.Armors.Chest" target="GtuWarcraft.Items.Armor">
-              <point x="0.0" y="-14.5" />
-              <point x="94.18181818181819" y="103.0" />
-              <point x="160.84848484848487" y="103.0" />
-              <point x="-27.333333333333314" y="14.5" />
-            </edge>
-            <edge source="GtuWarcraft.Items.Weapon" target="GtuWarcraft.Items.Item">
-              <point x="0.0" y="-14.5" />
-              <point x="-58.35984848484847" y="24.0" />
-              <point x="39.84848484848487" y="24.0" />
-              <point x="-18.0" y="14.5" />
-            </edge>
-          </edges>
-          <settings layout="Hıerarchıc Group" zoom="1.1" x="-175.0" y="40.0" />
+          <edges />
+          <settings layout="Hıerarchıc Group" zoom="1.0" x="137.0" y="99.0" />
           <SelectedNodes />
           <Categories />
           <SCOPE>All</SCOPE>
@@ -853,146 +798,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Weapons/Dagger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/ali_e/OneDrive/Masaüstü/Project/VeriYapiler/ItemStore/deneme">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hıerarchıc Group" zoom="1.0" x="799.0" y="420.5" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Weapons/Bow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+    <entry file="uml://JAVA/">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="" y="">com</node>
+            <node x="" y="">netscape</node>
+            <node x="" y="">oracle</node>
+            <node x="" y="">org</node>
+            <node x="" y="">sun</node>
+            <node x="" y="">GtuWarcraft</node>
+            <node x="" y="">META-INF</node>
+            <node x="" y="">jdk</node>
+            <node x="" y="">groovyjarjarasm</node>
+            <node x="" y="">java</node>
+            <node x="" y="">groovy</node>
+            <node x="" y="">javax</node>
+            <node x="" y="">groovyjarjarcommonscli</node>
+            <node x="" y="">javafx</node>
+            <node x="" y="">groovyjarjarantlr</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hıerarchıc Group" zoom="1.0" x="240.0" y="261.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Weapons/CrossBow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+    <entry file="uml://JAVA/GtuWarcraft.Items">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>GtuWarcraft.Items</OriginalElement>
+          <nodes>
+            <node x="" y="">GtuWarcraft.Items.ConsumableItems.Potions</node>
+            <node x="" y="">GtuWarcraft.Items.Weapons.Weapon</node>
+            <node x="" y="">GtuWarcraft.Items.TradeGoods</node>
+            <node x="" y="">GtuWarcraft.Items.Armors.Feet</node>
+            <node x="" y="">GtuWarcraft.Items.Armors.Legs</node>
+            <node x="" y="">GtuWarcraft.Items.ConsumableItems.Foods</node>
+            <node x="" y="">GtuWarcraft.Items.Weapons.Stave</node>
+            <node x="" y="">GtuWarcraft.Items.Weapons.Dagger</node>
+            <node x="" y="">GtuWarcraft.Items.ConsumableItems.Drinks</node>
+            <node x="" y="">GtuWarcraft.Items.Weapons.Bow</node>
+            <node x="" y="">GtuWarcraft.Items.Item</node>
+            <node x="" y="">GtuWarcraft.Items.ConsumableItems.Elixir</node>
+            <node x="" y="">GtuWarcraft.Items.ConsumableItems.Bandages</node>
+            <node x="" y="">GtuWarcraft.Items.Armors.Chest</node>
+            <node x="" y="">GtuWarcraft.Items.Armors.Head</node>
+            <node x="" y="">GtuWarcraft.Items.Weapons.Sword</node>
+            <node x="" y="">GtuWarcraft.Items.ConsumableItems.Consumable</node>
+            <node x="" y="">GtuWarcraft.Items.Armors.Armor</node>
+            <node x="" y="">GtuWarcraft.Items.Weapons.CrossBow</node>
+            <node x="" y="">GtuWarcraft.Items.Armors.Hands</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hıerarchıc Group" zoom="1.0" x="773.0" y="101.5" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Armors/Hands.java">
+    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Weapons/Weapon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Armors/Head.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/ConsumableItems/Elixir.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/ConsumableItems/Potions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/ConsumableItems/Bandages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/ConsumableItems/Foods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        <state relative-caret-position="84">
+          <caret line="4" column="41" lean-forward="false" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/ConsumableItems/Drinks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/TradeGoods/Herbs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/TradeGoods/Leather.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/TradeGoods/MetalAndStone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Armors/Armor.java" />
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/Weapons/Weapon.java" />
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Items/TradeGoods/Cloth.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Users/User.java" />
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Users/Admin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/Users/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GtuWarcraft/World/AuctionHouse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

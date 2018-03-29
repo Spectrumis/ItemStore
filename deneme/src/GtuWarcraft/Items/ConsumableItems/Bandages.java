@@ -1,4 +1,4 @@
 package GtuWarcraft.Items.ConsumableItems;
 
-public class Bandages {
+public class Bandages extends Consumable {
 }

@@ -1,4 +1,4 @@
 package GtuWarcraft.Items.ConsumableItems;
 
-public class Elixir {
+public class Elixir extends Consumable {
 }
