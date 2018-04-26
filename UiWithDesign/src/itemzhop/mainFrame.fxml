@@ -3,9 +3,9 @@
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.ScrollBar?>
-<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.effect.Bloom?>
 <?import javafx.scene.image.Image?>
@@ -32,8 +32,7 @@
         <Pane layoutX="648.0" layoutY="244.0" prefHeight="63.0" prefWidth="275.0" />
         <Pane layoutX="370.0" layoutY="336.0" prefHeight="294.0" prefWidth="524.0">
                <children>
-                  <ScrollBar layoutX="493.0" layoutY="8.0" orientation="VERTICAL" prefHeight="281.0" prefWidth="17.0" />
-                  <TableView fx:id="storeTable" layoutY="8.0" prefHeight="281.0" prefWidth="485.0" />
+                  <ListView fx:id="listView" layoutY="5.0" prefHeight="284.0" prefWidth="524.0" />
                </children></Pane>
             <ImageView fitHeight="132.0" fitWidth="139.0" layoutX="25.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -123,7 +122,7 @@
                   <Font name="Ubuntu Mono Bold" size="31.0" />
                </font>
             </Label>
-            <Button fx:id="ahmetlen2" layoutX="371.0" layoutY="646.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="242.0" text="Buy Item" />
+            <Button fx:id="ahmetlen2" layoutX="371.0" layoutY="646.0" mnemonicParsing="false" onAction="#loadItems" prefHeight="54.0" prefWidth="242.0" text="Buy Item" />
             <Button fx:id="ahmetlen21" layoutX="642.0" layoutY="646.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="242.0" text="Offer Item" />
             <Pane id="" fx:id="" layoutX="16.0" layoutY="39.0" prefHeight="539.0" prefWidth="342.0">
                <children>
