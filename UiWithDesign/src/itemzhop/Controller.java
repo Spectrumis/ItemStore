@@ -4,43 +4,39 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.control.ListView;
-import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 
-import javax.xml.soap.Text;
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class Controller {
     @FXML private VBox leftBox;
     @FXML private TableView<Item> storeTable ;
-    private ObservableList data;
-   @FXML private ListView<Item> listView;
+    @FXML private ListView<Item> listView;
+    @FXML private TextField txt_search;
+    ArrayList<Item> myItem=new ArrayList<>( );
+
+    BinarySearchTree tree = new BinarySearchTree();
+    ObservableList data = FXCollections.observableList(myItem);
 
 
-    
+
     //storeTable içerisine items.csv içerisinde yer alan ürünlerin tamamını çekeceğiz ve her satırı bir eleman olarak ekleyeceğiz
-    private void ahmetlen(ActionEvent event) {
 
-        System.out.println("Ahmetlendiniz!");
-    }
 
     @FXML
     public void initialize() throws IOException {
 
-
         BufferedReader getUserData = new BufferedReader(new FileReader("items.csv"));
         String[] tmpItemStr;
         String line;
-        ArrayList<Item> myItem=new ArrayList<>( );
         Item tempItem;
 
         while ((line = getUserData.readLine()) != null) {
@@ -50,21 +46,113 @@ public class Controller {
             tempItem.description=tmpItemStr[1];
             tempItem.defaultPrice=0;
             myItem.add(tempItem);
+            //add to binary tree
+            tree.insert(tempItem);
         }
-        ObservableList data = FXCollections.observableList(myItem);
+
 
         listView.setItems(data);
 
-
-
     }
 
+    //on click list alpha button and list all items in auction house
+    @FXML
+    void listAlpha(){
+        myItem.clear();
+        tree.inorder();
+        listView.refresh();
+    }
+
+    //click on search button and search this item in items list
+    @FXML
+    void searchItem() throws IOException {
+        Item  item = tree.search(txt_search.getText());
+        myItem.clear();
+        myItem.add(item);
+
+        listView.refresh();
+    }
+
+    // Java program to demonstrate insert operation in binary search tree
+    class BinarySearchTree {
+
+        /* Class containing left and right child of current node and key value*/
+        class Node {
+            Item key;
+            Node left, right;
+
+            public Node(Item item) {
+                key = item;
+                left = right = null;
+            }
+        }
+
+        // Root of BST
+        Node root;
+
+        // Constructor
+        BinarySearchTree() {
+            root = null;
+        }
+
+        // This method mainly calls insertRec()
+        void insert(Item key) {
+            root = insertRec(root, key);
+        }
+
+        /* A recursive function to insert a new key in BST */
+        Node insertRec(Node root, Item key) {
+
+            /* If the tree is empty, return a new node */
+            if (root == null) {
+                root = new Node(key);
+                return root;
+            }
+
+            /* Otherwise, recur down the tree */
+            if (key.getName().compareTo(root.key.getName()) <0)
+                root.left = insertRec(root.left, key);
+            else if (key.getName().compareTo(root.key.getName())>0)
+                root.right = insertRec(root.right, key);
+
+            /* return the (unchanged) node pointer */
+            return root;
+        }
+
+        // This method mainly calls InorderRec()
+        void inorder()  {
+            inorderRec(root);
+        }
+
+        // A utility function to do inorder traversal of BST
+        void inorderRec(Node root) {
+            if (root != null) {
+                inorderRec(root.left);
+                myItem.add(root.key);
+                //System.out.println(root.key);
+                inorderRec(root.right);
+            }
+        }
+
+        Item search(String target){
+            return search(root,  target);
+        }
+
+        Item search(Node root, String target){
+            if (target.compareTo(root.key.getName()) < 0)
+                return search(root.left, target);
+            if (target.compareTo(root.key.getName()) > 0)
+                return search(root.right, target);
+            else
+                return root.key;
+
+        }
+    }
+
+
+
+
     public void loadItems() throws IOException {
-
-
-
-
-
 
 
 

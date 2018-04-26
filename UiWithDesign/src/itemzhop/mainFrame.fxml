@@ -7,6 +7,7 @@
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.ScrollBar?>
 <?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.Bloom?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -138,6 +139,9 @@
                   </TextArea>
                </children>
             </Pane>
+            <Button layoutX="373.0" layoutY="308.0" mnemonicParsing="false" onMouseClicked="#listAlpha" text="List Alpha" />
+            <Button layoutX="822.0" layoutY="308.0" mnemonicParsing="false" onMouseClicked="#searchItem" text="Search" />
+            <TextField id="nameSearch" fx:id="txt_search" layoutX="642.0" layoutY="308.0" promptText="search" />
       </children>
     </Pane>
   </children>
