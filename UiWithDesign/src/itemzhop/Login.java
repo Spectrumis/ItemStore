@@ -12,7 +12,9 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-import java.awt.*;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -22,10 +24,7 @@ public class Login implements Initializable{
 
 
     @FXML private PasswordField txt_password;
-    @FXML protected TextField txt_username;
-
-
-
+    @FXML private TextField txt_username;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -35,17 +34,27 @@ public class Login implements Initializable{
     public void handleButtonAction(ActionEvent actionEvent) throws IOException {
 
 
+        BufferedReader getUserData = new BufferedReader(new FileReader("accounts.csv"));
+        String[] tmpUser;
+        String line;
+        while ((line = getUserData.readLine()) != null) {
+            tmpUser = line.split(",");
+            if (tmpUser[0].equals(txt_username.getText()) && tmpUser[1].equals(txt_password.getText())){
+                System.out.println("Succesfull!!");
+                Parent home_page_parent= FXMLLoader.load(getClass().getResource("mainFrame.fxml"));
+                Scene home_page_scene=new Scene(home_page_parent);
+                Stage app_stage=(Stage)((Node) actionEvent.getSource()).getScene().getWindow();
+                app_stage.hide();
+                app_stage.setScene(home_page_scene);
+                app_stage.show();
+            }
 
-        System.out.println("clicked to me");
 
-       if ( txt_username.getText().equals("mesut")&&txt_password.getText().equals("123")){
-           Parent home_page_parent= FXMLLoader.load(getClass().getResource("mainFrame.fxml"));
-           Scene home_page_scene=new Scene(home_page_parent);
-           Stage app_stage=(Stage)((Node) actionEvent.getSource()).getScene().getWindow();
-           app_stage.hide();
-           app_stage.setScene(home_page_scene);
-           app_stage.show();
-       }
+        }
+
+
+
+
 
     }
 }
