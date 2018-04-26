@@ -26,12 +26,9 @@ public class Controller {
    @FXML private ListView<Item> listView;
 
 
-    
-    //storeTable içerisine items.csv içerisinde yer alan ürünlerin tamamını çekeceğiz ve her satırı bir eleman olarak ekleyeceğiz
-    private void ahmetlen(ActionEvent event) {
 
-        System.out.println("Ahmetlendiniz!");
-    }
+    //storeTable içerisine items.csv içerisinde yer alan ürünlerin tamamını çekeceğiz ve her satırı bir eleman olarak ekleyeceğiz
+
 
     @FXML
     public void initialize() throws IOException {
