@@ -5,9 +5,8 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.TreeTableColumn?>
-<?import javafx.scene.control.TreeTableView?>
 <?import javafx.scene.effect.Bloom?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -22,16 +21,20 @@
 
 <GridPane alignment="CENTER" hgap="10.0" vgap="10.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="itemzhop.Controller">
   <children>
-    <Pane focusTraversable="true" prefHeight="927.0" prefWidth="937.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+    <Pane focusTraversable="true" onDragDetected="#loadItems" prefHeight="927.0" prefWidth="937.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
       <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" height="61.0" layoutX="36.0" layoutY="384.0" stroke="BLACK" strokeType="INSIDE" width="285.0">
                <fill>
                   <Color blue="0.200" green="1.000" red="0.839" fx:id="x4" />
                </fill>
             </Rectangle>
-        <Button fx:id="ahmetlen" layoutX="36.0" layoutY="262.0" mnemonicParsing="false" onAction="#ahmetlen" prefHeight="54.0" prefWidth="285.0" text="Get Report" />
+        <Button fx:id="ahmetlen" layoutX="36.0" layoutY="262.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="285.0" text="Get Report" />
         <Pane layoutX="648.0" layoutY="244.0" prefHeight="63.0" prefWidth="275.0" />
-        <Pane layoutX="648.0" layoutY="342.0" prefHeight="63.0" prefWidth="275.0" />
+        <Pane layoutX="370.0" layoutY="336.0" prefHeight="294.0" prefWidth="524.0">
+               <children>
+                  <ScrollBar layoutX="493.0" layoutY="8.0" orientation="VERTICAL" prefHeight="281.0" prefWidth="17.0" />
+                  <TableView fx:id="storeTable" layoutY="8.0" prefHeight="281.0" prefWidth="485.0" />
+               </children></Pane>
             <ImageView fitHeight="132.0" fitWidth="139.0" layoutX="25.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@player.png" />
@@ -57,7 +60,7 @@
                   <Font size="25.0" fx:id="x3" />
                </font>
             </Label>
-            <Button fx:id="ahmetlen1" layoutX="36.0" layoutY="321.0" mnemonicParsing="false" onAction="#ahmetlen" prefHeight="54.0" prefWidth="285.0" text="My Enviroment" />
+            <Button fx:id="ahmetlen1" layoutX="36.0" layoutY="321.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="285.0" text="My Enviroment" />
             <Sphere cache="true" cacheHint="SPEED" focusTraversable="true" layoutX="157.0" layoutY="616.0" nodeOrientation="RIGHT_TO_LEFT" radius="0.77">
                <effect>
                   <Bloom />
@@ -66,14 +69,6 @@
                   <Cursor fx:constant="MOVE" />
                </cursor>
             </Sphere>
-            <TreeTableView layoutX="362.0" layoutY="315.0" prefHeight="200.0" prefWidth="544.0">
-              <columns>
-                <TreeTableColumn prefWidth="130.0" text="Properties1" />
-                  <TreeTableColumn prefWidth="135.0" text="Properties 2" />
-                  <TreeTableColumn minWidth="7.0" prefWidth="126.0" text="Properties 3" />
-                  <TreeTableColumn minWidth="0.0" prefWidth="143.0" text="Properties 4" />
-              </columns>
-            </TreeTableView>
             <RadioButton layoutX="371.0" layoutY="108.0" mnemonicParsing="false" text="Item 1" />
             <RadioButton layoutX="487.0" layoutY="108.0" mnemonicParsing="false" text="Item 2" />
             <RadioButton layoutX="371.0" layoutY="202.0" mnemonicParsing="false" text="Item 5" />
@@ -128,8 +123,8 @@
                   <Font name="Ubuntu Mono Bold" size="31.0" />
                </font>
             </Label>
-            <Button fx:id="ahmetlen2" layoutX="384.0" layoutY="521.0" mnemonicParsing="false" onAction="#ahmetlen" prefHeight="54.0" prefWidth="242.0" text="Buy Item" />
-            <Button fx:id="ahmetlen21" layoutX="655.0" layoutY="521.0" mnemonicParsing="false" onAction="#ahmetlen" prefHeight="54.0" prefWidth="242.0" text="Offer Item" />
+            <Button fx:id="ahmetlen2" layoutX="371.0" layoutY="646.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="242.0" text="Buy Item" />
+            <Button fx:id="ahmetlen21" layoutX="642.0" layoutY="646.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="242.0" text="Offer Item" />
             <Pane id="" fx:id="" layoutX="16.0" layoutY="39.0" prefHeight="539.0" prefWidth="342.0">
                <children>
                   <TextArea id="txt_playerInfo" fx:id="txt_playerInfo" cacheShape="false" centerShape="false" editable="false" focusTraversable="false" layoutX="141.0" layoutY="79.0" opacity="0.81" prefHeight="126.0" prefWidth="173.0" scaleShape="false" text="Player Info">
@@ -137,8 +132,7 @@
                         <Font size="28.0" />
                      </font>
                   </TextArea>
-                  <TextArea id="txt_player_type" fx:id="txt_player_type" cacheShape="false" centerShape="false"
-                            editable="false" focusTraversable="false" layoutX="11.0" layoutY="16.0" opacity="0.81" prefHeight="54.0" prefWidth="311.0" scaleShape="false" text="Player Panel">
+                  <TextArea id="txt_player_type" fx:id="txt_player_type" cacheShape="false" centerShape="false" editable="false" focusTraversable="false" layoutX="11.0" layoutY="16.0" opacity="0.81" prefHeight="54.0" prefWidth="311.0" scaleShape="false" text="Player Panel">
                      <font>
                         <Font size="18.0" />
                      </font>
