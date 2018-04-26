@@ -37,11 +37,6 @@
                   <Image url="@player.png" />
                </image>
             </ImageView>
-            <TextArea cacheShape="false" centerShape="false" focusTraversable="false" layoutX="167.0" layoutY="117.0" prefHeight="132.0" prefWidth="173.0" scaleShape="false" text="Player Info">
-               <font>
-                  <Font size="13.0" />
-               </font>
-            </TextArea>
       <Rectangle arcHeight="5.0" arcWidth="5.0" height="61.0" layoutX="37.0" layoutY="455.0" stroke="BLACK" strokeType="INSIDE" width="285.0">
         <fill>
           <Color blue="0.200" green="1.000" red="0.839" fx:id="x2" />
@@ -135,13 +130,19 @@
             </Label>
             <Button fx:id="ahmetlen2" layoutX="384.0" layoutY="521.0" mnemonicParsing="false" onAction="#ahmetlen" prefHeight="54.0" prefWidth="242.0" text="Buy Item" />
             <Button fx:id="ahmetlen21" layoutX="655.0" layoutY="521.0" mnemonicParsing="false" onAction="#ahmetlen" prefHeight="54.0" prefWidth="242.0" text="Offer Item" />
-            <Pane fx:id="txt_playerInfo" id="txt_playerInfo" layoutX="16.0" layoutY="39.0" prefHeight="539.0" prefWidth="342.0">
+            <Pane id="" fx:id="" layoutX="16.0" layoutY="39.0" prefHeight="539.0" prefWidth="342.0">
                <children>
-                  <Label layoutX="78.0" layoutY="7.0" text="Player Panel">
+                  <TextArea id="txt_playerInfo" fx:id="txt_playerInfo" cacheShape="false" centerShape="false" editable="false" focusTraversable="false" layoutX="141.0" layoutY="79.0" opacity="0.81" prefHeight="126.0" prefWidth="173.0" scaleShape="false" text="Player Info">
                      <font>
-                        <Font name="Ubuntu Mono Bold" size="31.0" />
+                        <Font size="28.0" />
                      </font>
-                  </Label>
+                  </TextArea>
+                  <TextArea id="txt_player_type" fx:id="txt_player_type" cacheShape="false" centerShape="false"
+                            editable="false" focusTraversable="false" layoutX="11.0" layoutY="16.0" opacity="0.81" prefHeight="54.0" prefWidth="311.0" scaleShape="false" text="Player Panel">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextArea>
                </children>
             </Pane>
       </children>
