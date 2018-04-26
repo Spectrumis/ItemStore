@@ -9,6 +9,8 @@ public  class Item {
     public String name;
     public int defaultPrice;
 
+
+    public Item(){}
     public Item(String name, String description,int defaultPrice) {
         this.name = name;
         this.description = description;
@@ -17,4 +19,8 @@ public  class Item {
 
     public String description;
 
+    @Override
+    public String toString() {
+        return name.toString()+"  -  "+description.toString()+"  -  "+defaultPrice;
+    }
 }
