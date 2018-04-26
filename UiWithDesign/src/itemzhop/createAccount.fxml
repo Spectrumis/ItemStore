@@ -30,6 +30,7 @@
             <PasswordField fx:id="txt_password" onAction="#createActionHandler" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <PasswordField fx:id="txt_passRepeat" onAction="#createActionHandler" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <TextField fx:id="txt_userName" onAction="#createActionHandler" GridPane.columnIndex="1" />
+            <Button fx:id="btn_cancel" mnemonicParsing="false" onAction="#backToDoChoseWindow" text="Cancel" GridPane.rowIndex="3" />
          </children>
       </GridPane>
    </children>
