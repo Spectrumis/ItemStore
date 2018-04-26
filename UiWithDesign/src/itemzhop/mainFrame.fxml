@@ -20,8 +20,7 @@
 <?import javafx.scene.shape.Sphere?>
 <?import javafx.scene.text.Font?>
 
-<GridPane alignment="CENTER" hgap="10.0" vgap="10.0" xmlns="http://javafx.com/javafx/8.0.121"
-          xmlns:fx="http://javafx.com/fxml/1" fx:controller="itemzhop.Controller">
+<GridPane alignment="CENTER" hgap="10.0" vgap="10.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="itemzhop.Controller">
   <children>
     <Pane focusTraversable="true" prefHeight="927.0" prefWidth="937.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
       <children>
@@ -91,42 +90,42 @@
             <RadioButton layoutX="742.0" layoutY="203.0" mnemonicParsing="false" text="Item 8" />
             <ImageView fitHeight="69.0" fitWidth="81.0" layoutX="389.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../Pictures/freepik.jpg" />
+                   <Image url="@/itemzhop/items/glitch-icon-01.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="69.0" fitWidth="81.0" layoutX="516.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../Pictures/freepik.jpg" />
+                  <Image url="@/itemzhop/items/glitch-icon-02.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="69.0" fitWidth="81.0" layoutX="634.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../Pictures/freepik.jpg" />
+                   <Image url="@/itemzhop/items/glitch-icon-03.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="69.0" fitWidth="81.0" layoutX="761.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../Pictures/freepik.jpg" />
+                   <Image url="@/itemzhop/items/glitch-icon-04.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="69.0" fitWidth="81.0" layoutX="397.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../Pictures/freepik.jpg" />
+                   <Image url="@/itemzhop/items/glitch-icon-05.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="69.0" fitWidth="81.0" layoutX="524.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../Pictures/freepik.jpg" />
+                   <Image url="@/itemzhop/items/glitch-icon-07.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="69.0" fitWidth="81.0" layoutX="642.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../Pictures/freepik.jpg" />
+                   <Image url="@/itemzhop/items/glitch-icon-08.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="69.0" fitWidth="81.0" layoutX="769.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../Pictures/freepik.jpg" />
+                   <Image url="@/itemzhop/items/glitch-icon-09.png" />
                </image>
             </ImageView>
             <Label layoutX="505.0" layoutY="43.0" text="Action House">
@@ -136,7 +135,7 @@
             </Label>
             <Button fx:id="ahmetlen2" layoutX="384.0" layoutY="521.0" mnemonicParsing="false" onAction="#ahmetlen" prefHeight="54.0" prefWidth="242.0" text="Buy Item" />
             <Button fx:id="ahmetlen21" layoutX="655.0" layoutY="521.0" mnemonicParsing="false" onAction="#ahmetlen" prefHeight="54.0" prefWidth="242.0" text="Offer Item" />
-            <Pane layoutX="16.0" layoutY="39.0" prefHeight="539.0" prefWidth="342.0">
+            <Pane fx:id="txt_playerInfo" id="txt_playerInfo" layoutX="16.0" layoutY="39.0" prefHeight="539.0" prefWidth="342.0">
                <children>
                   <Label layoutX="78.0" layoutY="7.0" text="Player Panel">
                      <font>

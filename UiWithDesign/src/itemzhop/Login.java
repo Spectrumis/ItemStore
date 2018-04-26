@@ -21,8 +21,6 @@ import java.util.ResourceBundle;
 
 public class Login implements Initializable{
 
-
-
     @FXML private PasswordField txt_password;
     @FXML private TextField txt_username;
 
@@ -48,13 +46,6 @@ public class Login implements Initializable{
                 app_stage.setScene(home_page_scene);
                 app_stage.show();
             }
-
-
         }
-
-
-
-
-
     }
 }
