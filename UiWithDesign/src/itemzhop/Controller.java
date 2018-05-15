@@ -5,11 +5,14 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -152,8 +155,13 @@ public class Controller {
 
 
 
-    public void loadItems() throws IOException {
-
+    public void loadItems(ActionEvent actionEvent) throws IOException {
+        Parent home_page_parent= FXMLLoader.load(getClass().getResource("profilePage.fxml"));
+        Scene home_page_scene=new Scene(home_page_parent);
+        Stage app_stage=(Stage)((Node) actionEvent.getSource()).getScene().getWindow();
+        app_stage.hide();
+        app_stage.setScene(home_page_scene);
+        app_stage.show();
 
 
     }

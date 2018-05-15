@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="547.0" prefWidth="992.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="itemzhop.profilePage">
+   <children>
+      <Pane fx:id="profilePage" layoutX="-1.0" layoutY="1.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="154.0" layoutX="14.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Pictures/çöp%20adam3.jpg" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Button layoutX="399.0" layoutY="207.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="207.0" text="Sahip Olduğum Eşyalar" />
+      <Button layoutX="170.0" layoutY="207.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="226.0" text="Arkadşlarımın Satıştaki Eşyaları" />
+      <Button layoutX="18.0" layoutY="207.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="Arkadaşlarım" />
+      <TableView layoutX="18.0" layoutY="259.0" prefHeight="278.0" prefWidth="966.0">
+        <columns>
+          <TableColumn prefWidth="150.0" text="Kullanıcı Adı" />
+          <TableColumn minWidth="0.0" prefWidth="227.0" text="Cüzdan" />
+            <TableColumn prefWidth="188.0" text="Satıştaki Eşya Sayısı" />
+            <TableColumn prefWidth="243.0" text="Yapılan Alışveriş Sayısı" />
+        </columns>
+      </TableView>
+      <Label layoutX="209.0" layoutY="140.0" text="Cüzdan">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="209.0" layoutY="71.0" text="Kullanıcı Adı">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -137,6 +137,7 @@
                         <Font size="18.0" />
                      </font>
                   </TextArea>
+                  <Button fx:id="btnArkadaslarim" layoutX="22.0" layoutY="486.0" mnemonicParsing="false" onAction="#loadItems" prefHeight="26.0" prefWidth="285.0" text="Arkadaşlarım" />
                </children>
             </Pane>
             <Button layoutX="373.0" layoutY="308.0" mnemonicParsing="false" onMouseClicked="#listAlpha" text="List Alpha" />
