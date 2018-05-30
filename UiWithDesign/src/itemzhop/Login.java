@@ -53,8 +53,8 @@ public class Login implements Initializable{
 
 
                     TextArea lblData = (TextArea) home_page_scene.lookup("#txt_playerInfo");
-                    lblData.setText("Hoş Geldin " + txt_username.getText());
-                    lblData.setWrapText(true);
+//                    lblData.setText("Hoş Geldin " + txt_username.getText());
+//                    lblData.setWrapText(true);
 
                     Stage app_stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
                     app_stage.hide();

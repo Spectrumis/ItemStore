@@ -34,6 +34,7 @@ public class Controller {
     //storeTable içerisine items.csv içerisinde yer alan ürünlerin tamamını çekeceğiz ve her satırı bir eleman olarak ekleyeceğiz
 
 
+
     @FXML
     public void initialize() throws IOException {
 
