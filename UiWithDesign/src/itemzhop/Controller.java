@@ -57,7 +57,7 @@ public class Controller {
             tempItem.defaultPrice=0;
             myItem.add(tempItem);
             //add to binary tree
-            data.add(new TableItems(tmpItemStr[0],tmpItemStr[1],tmpItemStr[1],1000));
+            data.add(new TableItems(tmpItemStr[0]  +" " + tmpItemStr[1],"",tmpItemStr[1],1000));
             tree.insert(tempItem);
         }
 
@@ -71,17 +71,18 @@ public class Controller {
         seller.setCellValueFactory(
                 new PropertyValueFactory<TableItems, String>("seller"));
 
-        TableColumn cost = new TableColumn("Fiyat");
-        cost.setMinWidth(200);
-        cost.setCellValueFactory(
-                new PropertyValueFactory<TableItems, Integer>("cost"));
-        TableColumn remainingTime = new TableColumn("Kalan Süre");
-        remainingTime.setMinWidth(200);
-        remainingTime.setCellValueFactory(
+        TableColumn price = new TableColumn("Fiyat");
+        price.setMinWidth(100);
+        price.setCellValueFactory(
+                new PropertyValueFactory<TableItems, String>("price"));
+
+        TableColumn time = new TableColumn("Kalan Süre ");
+        time.setMinWidth(100);
+        time.setCellValueFactory(
                 new PropertyValueFactory<TableItems, String>("time"));
 
         storeTable.setEditable(true);
-        storeTable.getColumns().addAll(itemName, seller, cost,remainingTime);
+        storeTable.getColumns().addAll(itemName, seller,price,time);
         storeTable.getItems().addAll(data);
     }
 
