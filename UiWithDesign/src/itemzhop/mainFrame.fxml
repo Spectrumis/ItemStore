@@ -24,11 +24,46 @@
   <children>
     <Pane focusTraversable="true" onDragDetected="#loadItems" prefHeight="927.0" prefWidth="937.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
       <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" height="61.0" layoutX="36.0" layoutY="384.0" stroke="BLACK" strokeType="INSIDE" width="285.0">
-               <fill>
-                  <Color blue="0.200" green="1.000" red="0.839" fx:id="x4" />
-               </fill>
+            <Pane id="" fx:id="" layoutX="14.0" layoutY="47.0" prefHeight="539.0" prefWidth="342.0">
+               <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="61.0" layoutX="24.0" layoutY="433.0" stroke="BLACK" strokeType="INSIDE" width="285.0">
+              <fill>
+                <Color blue="0.200" green="1.000" red="0.839" fx:id="x2" />
+              </fill>
             </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="61.0" layoutX="11.0" layoutY="278.0" stroke="BLACK" strokeType="INSIDE" width="285.0">
+                     <fill>
+                        <Color blue="0.200" green="1.000" red="0.839" fx:id="x4" />
+                     </fill>
+                  </Rectangle>
+                  <TextArea id="txt_playerInfo" fx:id="txt_playerInfo" cacheShape="false" centerShape="false" editable="false" focusTraversable="false" layoutX="141.0" layoutY="79.0" opacity="0.81" prefHeight="126.0" prefWidth="173.0" scaleShape="false" text="Player Info">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </TextArea>
+                  <TextArea id="txt_player_type" fx:id="txt_player_type" cacheShape="false" centerShape="false" editable="false" focusTraversable="false" layoutX="11.0" layoutY="16.0" opacity="0.81" prefHeight="54.0" prefWidth="311.0" scaleShape="false" text="Player Panel">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextArea>
+                  <Button fx:id="btnArkadaslarim" layoutX="24.0" layoutY="499.0" mnemonicParsing="false" onAction="#loadItems" prefHeight="26.0" prefWidth="285.0" text="Arkadaşlarım" />
+            <Label alignment="CENTER_RIGHT" layoutX="99.0" layoutY="449.0" prefWidth="210.0" text="1024 Gold">
+              <font>
+                <Font size="25.0" fx:id="x1" />
+              </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="72.0" layoutY="308.0" prefWidth="285.0" text="Kulis Shop">
+                     <font>
+                        <Font size="25.0" fx:id="x3" />
+                     </font>
+                  </Label>
+            <ImageView id="Coins-512.png" fitHeight="61.0" fitWidth="61.0" layoutX="42.0" layoutY="433.0" preserveRatio="true">
+              <image>
+                <Image preserveRatio="true" smooth="true" url="@Coins-512.png" />
+              </image>
+            </ImageView>
+               </children>
+            </Pane>
         <Button fx:id="ahmetlen" layoutX="36.0" layoutY="262.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="285.0" text="Get Report" />
         <Pane layoutX="648.0" layoutY="244.0" prefHeight="63.0" prefWidth="275.0" />
         <Pane layoutX="370.0" layoutY="336.0" prefHeight="294.0" prefWidth="524.0">
@@ -40,26 +75,6 @@
                   <Image url="@player.png" />
                </image>
             </ImageView>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" height="61.0" layoutX="37.0" layoutY="455.0" stroke="BLACK" strokeType="INSIDE" width="285.0">
-        <fill>
-          <Color blue="0.200" green="1.000" red="0.839" fx:id="x2" />
-        </fill>
-      </Rectangle>
-      <Label alignment="CENTER_RIGHT" layoutX="13.0" layoutY="471.0" prefWidth="210.0" text="1024 Gold">
-        <font>
-          <Font size="25.0" fx:id="x1" />
-        </font>
-      </Label>
-      <ImageView id="Coins-512.png" fitHeight="61.0" fitWidth="61.0" layoutX="238.0" layoutY="460.0" preserveRatio="true">
-        <image>
-          <Image preserveRatio="true" smooth="true" url="@Coins-512.png" />
-        </image>
-      </ImageView>
-      <Label alignment="CENTER" layoutX="7.0" layoutY="400.0" prefWidth="285.0" text="Kulis Shop">
-               <font>
-                  <Font size="25.0" fx:id="x3" />
-               </font>
-            </Label>
             <Button fx:id="ahmetlen1" layoutX="36.0" layoutY="321.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="285.0" text="My Enviroment" />
             <Sphere cache="true" cacheHint="SPEED" focusTraversable="true" layoutX="157.0" layoutY="616.0" nodeOrientation="RIGHT_TO_LEFT" radius="0.77">
                <effect>
@@ -118,28 +133,13 @@
                    <Image url="@/itemzhop/items/glitch-icon-09.png" />
                </image>
             </ImageView>
-            <Label layoutX="505.0" layoutY="43.0" text="Action House">
+            <Label layoutX="492.0" layoutY="47.0" text="Action House">
                <font>
                   <Font name="Ubuntu Mono Bold" size="31.0" />
                </font>
             </Label>
             <Button fx:id="ahmetlen2" layoutX="371.0" layoutY="646.0" mnemonicParsing="false" onAction="#loadItems" prefHeight="54.0" prefWidth="242.0" text="Buy Item" />
             <Button fx:id="ahmetlen21" layoutX="642.0" layoutY="646.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="242.0" text="Offer Item" />
-            <Pane id="" fx:id="" layoutX="16.0" layoutY="39.0" prefHeight="539.0" prefWidth="342.0">
-               <children>
-                  <TextArea id="txt_playerInfo" fx:id="txt_playerInfo" cacheShape="false" centerShape="false" editable="false" focusTraversable="false" layoutX="141.0" layoutY="79.0" opacity="0.81" prefHeight="126.0" prefWidth="173.0" scaleShape="false" text="Player Info">
-                     <font>
-                        <Font size="28.0" />
-                     </font>
-                  </TextArea>
-                  <TextArea id="txt_player_type" fx:id="txt_player_type" cacheShape="false" centerShape="false" editable="false" focusTraversable="false" layoutX="11.0" layoutY="16.0" opacity="0.81" prefHeight="54.0" prefWidth="311.0" scaleShape="false" text="Player Panel">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </TextArea>
-                  <Button fx:id="btnArkadaslarim" layoutX="22.0" layoutY="486.0" mnemonicParsing="false" onAction="#loadItems" prefHeight="26.0" prefWidth="285.0" text="Arkadaşlarım" />
-               </children>
-            </Pane>
             <Button layoutX="373.0" layoutY="308.0" mnemonicParsing="false" onMouseClicked="#listAlpha" text="List Alpha" />
             <Button layoutX="822.0" layoutY="308.0" mnemonicParsing="false" onMouseClicked="#searchItem" text="Search" />
             <TextField id="nameSearch" fx:id="txt_search" layoutX="642.0" layoutY="308.0" promptText="search" />
