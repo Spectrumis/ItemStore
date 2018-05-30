@@ -49,8 +49,8 @@
             <state />
           </provider>
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="2574">
-              <caret line="143" column="116" lean-forward="false" selection-start-line="143" selection-start-column="111" selection-end-line="143" selection-end-column="116" />
+            <state relative-caret-position="1440">
+              <caret line="80" column="116" lean-forward="false" selection-start-line="80" selection-start-column="116" selection-end-line="80" selection-end-column="116" />
               <folding />
             </state>
           </provider>
@@ -407,12 +407,12 @@
       <workItem from="1524765264978" duration="7664000" />
       <workItem from="1526388780089" duration="3722000" />
       <workItem from="1526767974787" duration="41000" />
-      <workItem from="1527710289892" duration="707000" />
+      <workItem from="1527710289892" duration="1619000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61064000" />
+    <option name="totallyTimeSpent" value="61976000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -668,17 +668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/itemzhop/profilePage.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="51" lean-forward="false" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/itemzhop/item.fxml">
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -720,13 +709,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/itemzhop/profilePage.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="51" lean-forward="false" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/itemzhop/mainFrame.fxml">
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="2574">
-          <caret line="143" column="116" lean-forward="false" selection-start-line="143" selection-start-column="111" selection-end-line="143" selection-end-column="116" />
+        <state relative-caret-position="1440">
+          <caret line="80" column="116" lean-forward="false" selection-start-line="80" selection-start-column="116" selection-end-line="80" selection-end-column="116" />
           <folding />
         </state>
       </provider>

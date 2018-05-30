@@ -4,8 +4,6 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
-<?import javafx.scene.control.RadioButton?>
-<?import javafx.scene.control.ScrollBar?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.Bloom?>
@@ -24,58 +22,46 @@
   <children>
     <Pane focusTraversable="true" onDragDetected="#loadItems" prefHeight="927.0" prefWidth="937.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
       <children>
-            <Pane id="" fx:id="" layoutX="14.0" layoutY="47.0" prefHeight="539.0" prefWidth="342.0">
+            <Pane id="" fx:id="" layoutX="14.0" layoutY="15.0" prefHeight="539.0" prefWidth="342.0">
                <children>
+              <Button fx:id="ahmetlen" layoutX="24.0" layoutY="301.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="285.0" text="Get Report" />
+                  <TextArea id="txt_playerInfo" fx:id="txt_playerInfo" cacheShape="false" centerShape="false" editable="false" focusTraversable="false" layoutX="15.0" layoutY="213.0" opacity="0.81" prefHeight="54.0" prefWidth="304.0" scaleShape="false">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </TextArea>
             <Rectangle arcHeight="5.0" arcWidth="5.0" height="61.0" layoutX="24.0" layoutY="433.0" stroke="BLACK" strokeType="INSIDE" width="285.0">
               <fill>
                 <Color blue="0.200" green="1.000" red="0.839" fx:id="x2" />
               </fill>
             </Rectangle>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" height="61.0" layoutX="11.0" layoutY="278.0" stroke="BLACK" strokeType="INSIDE" width="285.0">
-                     <fill>
-                        <Color blue="0.200" green="1.000" red="0.839" fx:id="x4" />
-                     </fill>
-                  </Rectangle>
-                  <TextArea id="txt_playerInfo" fx:id="txt_playerInfo" cacheShape="false" centerShape="false" editable="false" focusTraversable="false" layoutX="141.0" layoutY="79.0" opacity="0.81" prefHeight="126.0" prefWidth="173.0" scaleShape="false" text="Player Info">
-                     <font>
-                        <Font size="28.0" />
-                     </font>
-                  </TextArea>
-                  <TextArea id="txt_player_type" fx:id="txt_player_type" cacheShape="false" centerShape="false" editable="false" focusTraversable="false" layoutX="11.0" layoutY="16.0" opacity="0.81" prefHeight="54.0" prefWidth="311.0" scaleShape="false" text="Player Panel">
+                  <TextArea id="txt_player_type" fx:id="txt_player_type" cacheShape="false" centerShape="false" editable="false" focusTraversable="false" layoutX="16.0" layoutY="147.0" opacity="0.81" prefHeight="54.0" prefWidth="304.0" scaleShape="false" text="Player Panel">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </TextArea>
-                  <Button fx:id="btnArkadaslarim" layoutX="24.0" layoutY="499.0" mnemonicParsing="false" onAction="#loadItems" prefHeight="26.0" prefWidth="285.0" text="Arkadaşlarım" />
-            <Label alignment="CENTER_RIGHT" layoutX="99.0" layoutY="449.0" prefWidth="210.0" text="1024 Gold">
+                  <Button fx:id="btnArkadaslarim" layoutX="24.0" layoutY="366.0" mnemonicParsing="false" onAction="#loadItems" prefHeight="54.0" prefWidth="285.0" text="Profilime Git" />
+            <Label alignment="CENTER_RIGHT" layoutX="118.0" layoutY="449.0" prefHeight="30.0" prefWidth="173.0" text="1024 Gold">
               <font>
                 <Font size="25.0" fx:id="x1" />
               </font>
             </Label>
-            <Label alignment="CENTER" layoutX="72.0" layoutY="308.0" prefWidth="285.0" text="Kulis Shop">
-                     <font>
-                        <Font size="25.0" fx:id="x3" />
-                     </font>
-                  </Label>
             <ImageView id="Coins-512.png" fitHeight="61.0" fitWidth="61.0" layoutX="42.0" layoutY="433.0" preserveRatio="true">
               <image>
                 <Image preserveRatio="true" smooth="true" url="@Coins-512.png" />
               </image>
             </ImageView>
+                  <ImageView fitHeight="132.0" fitWidth="139.0" layoutX="90.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@player.png" />
+                     </image>
+                  </ImageView>
                </children>
             </Pane>
-        <Button fx:id="ahmetlen" layoutX="36.0" layoutY="262.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="285.0" text="Get Report" />
-        <Pane layoutX="648.0" layoutY="244.0" prefHeight="63.0" prefWidth="275.0" />
         <Pane layoutX="370.0" layoutY="336.0" prefHeight="294.0" prefWidth="524.0">
                <children>
                   <ListView fx:id="listView" layoutY="5.0" prefHeight="284.0" prefWidth="524.0" />
                </children></Pane>
-            <ImageView fitHeight="132.0" fitWidth="139.0" layoutX="25.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@player.png" />
-               </image>
-            </ImageView>
-            <Button fx:id="ahmetlen1" layoutX="36.0" layoutY="321.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="285.0" text="My Enviroment" />
             <Sphere cache="true" cacheHint="SPEED" focusTraversable="true" layoutX="157.0" layoutY="616.0" nodeOrientation="RIGHT_TO_LEFT" radius="0.77">
                <effect>
                   <Bloom />
@@ -84,55 +70,6 @@
                   <Cursor fx:constant="MOVE" />
                </cursor>
             </Sphere>
-            <RadioButton layoutX="371.0" layoutY="108.0" mnemonicParsing="false" text="Item 1" />
-            <RadioButton layoutX="487.0" layoutY="108.0" mnemonicParsing="false" text="Item 2" />
-            <RadioButton layoutX="371.0" layoutY="202.0" mnemonicParsing="false" text="Item 5" />
-            <RadioButton layoutX="487.0" layoutY="203.0" mnemonicParsing="false" text="Item 6" />
-            <RadioButton layoutX="614.0" layoutY="108.0" mnemonicParsing="false" text="Item 3" />
-            <RadioButton layoutX="617.0" layoutY="202.0" mnemonicParsing="false" text="Item 7" />
-            <ScrollBar layoutX="875.0" layoutY="92.0" orientation="VERTICAL" prefHeight="191.0" prefWidth="27.0" />
-            <RadioButton layoutX="742.0" layoutY="108.0" mnemonicParsing="false" text="Item 4" />
-            <RadioButton layoutX="742.0" layoutY="203.0" mnemonicParsing="false" text="Item 8" />
-            <ImageView fitHeight="69.0" fitWidth="81.0" layoutX="389.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                   <Image url="@/itemzhop/items/glitch-icon-01.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="69.0" fitWidth="81.0" layoutX="516.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@/itemzhop/items/glitch-icon-02.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="69.0" fitWidth="81.0" layoutX="634.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                   <Image url="@/itemzhop/items/glitch-icon-03.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="69.0" fitWidth="81.0" layoutX="761.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                   <Image url="@/itemzhop/items/glitch-icon-04.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="69.0" fitWidth="81.0" layoutX="397.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                   <Image url="@/itemzhop/items/glitch-icon-05.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="69.0" fitWidth="81.0" layoutX="524.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                   <Image url="@/itemzhop/items/glitch-icon-07.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="69.0" fitWidth="81.0" layoutX="642.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                   <Image url="@/itemzhop/items/glitch-icon-08.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="69.0" fitWidth="81.0" layoutX="769.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                   <Image url="@/itemzhop/items/glitch-icon-09.png" />
-               </image>
-            </ImageView>
             <Label layoutX="492.0" layoutY="47.0" text="Action House">
                <font>
                   <Font name="Ubuntu Mono Bold" size="31.0" />
