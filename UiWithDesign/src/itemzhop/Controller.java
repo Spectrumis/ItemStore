@@ -9,8 +9,10 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ListView;
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -21,8 +23,10 @@ import java.util.ArrayList;
 
 public class Controller {
     @FXML private VBox leftBox;
-    @FXML private TableView<Item> storeTable ;
+
+    @FXML private TableView<TableItems> storeTable = new TableView<>() ;
     @FXML private ListView<Item> listView;
+
     @FXML private TextField txt_search;
     ArrayList<Item> myItem=new ArrayList<>( );
 
@@ -34,9 +38,11 @@ public class Controller {
     //storeTable içerisine items.csv içerisinde yer alan ürünlerin tamamını çekeceğiz ve her satırı bir eleman olarak ekleyeceğiz
 
 
-
     @FXML
     public void initialize() throws IOException {
+
+         final ObservableList<TableItems> data =
+                FXCollections.observableArrayList();
 
         BufferedReader getUserData = new BufferedReader(new FileReader("items.csv"));
         String[] tmpItemStr;
@@ -51,12 +57,32 @@ public class Controller {
             tempItem.defaultPrice=0;
             myItem.add(tempItem);
             //add to binary tree
+            data.add(new TableItems(tmpItemStr[0],tmpItemStr[1],tmpItemStr[1],1000));
             tree.insert(tempItem);
         }
 
+        TableColumn itemName = new TableColumn("Ürün Adi");
+        itemName.setMinWidth(100);
+        itemName.setCellValueFactory(
+                new PropertyValueFactory<TableItems, String>("name"));
 
-        listView.setItems(data);
+        TableColumn seller = new TableColumn("Satıcı");
+        seller.setMinWidth(100);
+        seller.setCellValueFactory(
+                new PropertyValueFactory<TableItems, String>("seller"));
 
+        TableColumn cost = new TableColumn("Fiyat");
+        cost.setMinWidth(200);
+        cost.setCellValueFactory(
+                new PropertyValueFactory<TableItems, Integer>("cost"));
+        TableColumn remainingTime = new TableColumn("Kalan Süre");
+        remainingTime.setMinWidth(200);
+        remainingTime.setCellValueFactory(
+                new PropertyValueFactory<TableItems, String>("time"));
+
+        storeTable.setEditable(true);
+        storeTable.getColumns().addAll(itemName, seller, cost,remainingTime);
+        storeTable.getItems().addAll(data);
     }
 
     //on click list alpha button and list all items in auction house
@@ -152,8 +178,6 @@ public class Controller {
 
         }
     }
-
-
 
 
     public void loadItems(ActionEvent actionEvent) throws IOException {
