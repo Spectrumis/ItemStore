@@ -57,6 +57,10 @@ public  class Sales implements Comparable<Sales> {
         this.lastBidder = lastBidder;
     }
 
+    public Sales(String name) {
+        this.itemName  = name;
+    }
+
 
     //getters
     public int getId() {
@@ -142,5 +146,18 @@ public  class Sales implements Comparable<Sales> {
     @Override
     public int compareTo(Sales o) {
         return this.getItemName().compareTo( o.getItemName() );
+    }
+    @Override
+    public boolean equals(Object o){
+        Sales sale = (Sales) o;
+        System.out.println(this.getItemName());
+        if(this.getItemName().equals(sale.getItemName())){
+            System.out.println(this.getItemName());
+            return true;
         }
+
+        return false;
+    }
+
+
 }

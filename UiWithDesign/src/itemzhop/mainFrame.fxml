@@ -64,8 +64,8 @@
                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
                      </columnResizePolicy>
                   </TableView>
-                  <TextField id="nameSearch" fx:id="txt_search" layoutX="631.0" layoutY="14.0" prefHeight="25.0" prefWidth="123.0" promptText="search" />
-                  <Button layoutX="754.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#searchItem" prefHeight="26.0" prefWidth="66.0" text="Search" />
+                  <TextField id="nameSearch" fx:id="txt_search" layoutX="575.0" layoutY="14.0" prefHeight="25.0" prefWidth="145.0" promptText="Aranacak Ürünü Giriniz" />
+                  <Button fx:id="btn_search" layoutX="720.0" layoutY="14.0" mnemonicParsing="false" onAction="#btn_search_click" prefHeight="25.0" prefWidth="123.0" text="Ara" />
                </children>
             </Pane>
             <Label layoutX="383.0" prefHeight="39.0" prefWidth="255.0" text="Açık Artırma Evi">

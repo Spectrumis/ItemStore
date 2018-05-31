@@ -11,9 +11,9 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         //DEBUG MODE
-        //Parent root = FXMLLoader.load(getClass().getResource("mainFrame.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("mainFrame.fxml"));
 
-        Parent root = FXMLLoader.load(getClass().getResource("chooseWindow.fxml"));
+        //Parent root = FXMLLoader.load(getClass().getResource("chooseWindow.fxml"));
         primaryStage.setTitle("Project Item Store");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();

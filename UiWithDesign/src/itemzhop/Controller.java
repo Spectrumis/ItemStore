@@ -1,5 +1,6 @@
 package itemzhop;
 
+import itemzhop.Algorithms.BinarySearchTree;
 import itemzhop.Algorithms.RedBlackTree;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -23,6 +24,7 @@ import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Random;
 
 public class Controller {
@@ -32,6 +34,7 @@ public class Controller {
     private ComboBox<String> sortSelect = new ComboBox<String>();
     @FXML
     private TableView<TableItems> storeTable = new TableView<>();
+    private ArrayList<Sales> shopItemsL = new ArrayList<>();
     @FXML
     private ListView<Item> listView;
     @FXML
@@ -114,14 +117,16 @@ public class Controller {
             tmpItemStr = line.split(",");
 
             sale = createSale(tmpItemStr);
-            shopItems.insert(sale);
+            shopItems.add(sale);
+            shopItemsL.add(sale);
+
             //add to binary tree
             data.add(new TableItems(sale.getItemName(),
                     sale.getSeller(),
                     sale.getPrice(),
                     sale.getMaxPrice(),
                     sale.getRemainingTime()));
-            tree.insert(sale);
+            tree.add(sale);
         }
         addItemsInTable(data);
     }
@@ -190,83 +195,6 @@ public class Controller {
         listView.refresh();*/
     }
 
-    // Java program to demonstrate insert operation in binary search tree
-    class BinarySearchTree {
-
-        /* Class containing left and right child of current node and key value*/
-        class Node {
-            Sales key;
-            Node left, right;
-
-            public Node(Sales Sale) {
-                key = Sale;
-                left = right = null;
-            }
-        }
-
-        // Root of BST
-        Node root;
-
-        // Constructor
-        BinarySearchTree() {
-            root = null;
-        }
-
-        // This method mainly calls insertRec()
-        void insert(Sales key) {
-            root = insertRec(root, key);
-        }
-
-        /* A recursive function to insert a new key in BST */
-        Node insertRec(Node root, Sales key) {
-
-            /* If the tree is empty, return a new node */
-            if (root == null) {
-                root = new Node(key);
-                return root;
-            }
-
-            /* Otherwise, recur down the tree */
-            if (key.getItemName().compareTo(root.key.getItemName()) < 0)
-                root.left = insertRec(root.left, key);
-            else if (key.getItemName().compareTo(root.key.getItemName()) > 0)
-                root.right = insertRec(root.right, key);
-
-            /* return the (unchanged) node pointer */
-            return root;
-        }
-
-        // This method mainly calls InorderRec()
-        void inorder() {
-            inorderRec(root);
-        }
-
-        // A utility function to do inorder traversal of BST
-        void inorderRec(Node root) {
-            if (root != null) {
-                inorderRec(root.left);
-                shopItems.insert(root.key);
-                //System.out.println(root.key);
-                inorderRec(root.right);
-            }
-        }
-
-        Sales search(String target) {
-            return search(root, target);
-        }
-
-        Sales search(Node root, String target) {
-            if (target.compareTo(root.key.getItemName()) < 0)
-                return search(root.left, target);
-            if (target.compareTo(root.key.getItemName()) > 0)
-                return search(root.right, target);
-            else
-                return root.key;
-
-        }
-    }
-
-
     public void loadItems(ActionEvent actionEvent) throws IOException {
         Parent home_page_parent = FXMLLoader.load(getClass().getResource("profilePage.fxml"));
         Scene home_page_scene = new Scene(home_page_parent);
@@ -274,8 +202,48 @@ public class Controller {
         app_stage.hide();
         app_stage.setScene(home_page_scene);
         app_stage.show();
+    }
+
+    @FXML
+    private void btn_search_click(){
+
+        storeTable.getItems().clear();
+        ObservableList<TableItems> data =
+                FXCollections.observableArrayList();
 
 
+
+        if(txt_search.getText() ==  null || txt_search.getText().isEmpty()){
+
+            for (Sales sale : shopItemsL)
+            {
+                TableItems it = new TableItems(sale.getItemName(),
+                        sale.getSeller(),
+                        sale.getPrice(),
+                        sale.getMaxPrice(),
+                        sale.getRemainingTime());
+
+                data.add(it);
+            }
+
+
+        }else{
+            ArrayList<Sales> result = new ArrayList<>();
+            result = shopItems.FindAll(new Sales(txt_search.getText()),shopItemsL);
+
+            for (Sales sale : result)
+            {
+                TableItems it = new TableItems(sale.getItemName(),
+                        sale.getSeller(),
+                        sale.getPrice(),
+                        sale.getMaxPrice(),
+                        sale.getRemainingTime());
+
+                data.add(it);
+            }
+        }
+        storeTable.setItems(data);
+        storeTable.refresh();
     }
 
 
