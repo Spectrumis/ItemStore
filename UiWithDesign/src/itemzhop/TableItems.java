@@ -5,16 +5,19 @@ public class TableItems {
     private String name;
     private String seller;
     private String time;
+    private String offer;
     private int price;
     private int maxPrice;
 
 
-    public TableItems(String name, String seller, int price, int maxPrice, String time) {
+
+    public TableItems(String name, String seller, int price, int maxPrice, String time,String offer) {
         this.name = name;
         this.seller = seller;
         this.time = time;
         this.price = price;
         this.maxPrice = maxPrice;
+        this.offer=offer;
     }
 
 
@@ -34,5 +37,6 @@ public class TableItems {
     public int getMaxPrice(){ return maxPrice; }
 
     public String getName() { return name;}
+    public String getOffer(){return offer;}
 
 }
