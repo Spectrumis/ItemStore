@@ -108,7 +108,15 @@ public class profilePage {
                             System.out.println(a+" "+b);
                                 if (a==b){
                                     System.out.println("yakaladım");
-                                   //data2.add(new Sale(tmpSale[1],tmpSale[2],Integer.parseInt(tmpSale[3]),Integer.parseInt(tmpSale[4]),tmpSale[5],tmpSale[6]));
+                                  // data2.add(new Sale(tmpSale[1],tmpSale[2],Integer.parseInt(tmpSale[3]),Integer.parseInt(tmpSale[4]),tmpSale[5],tmpSale[6]));
+                                   data2.add(new Sale(Integer.parseInt(tmpSale[0]),
+                                           tmpSale[1],
+                                           tmpSale[2],
+                                           Integer.parseInt(tmpSale[3]),
+                                           Integer.parseInt(tmpSale[4]),
+                                           Integer.parseInt(tmpSale[5]),
+                                           tmpSale[6],
+                                           tmpSale[6]));
 
                                 }
                         }
@@ -120,7 +128,7 @@ public class profilePage {
             TableColumn itemName = new TableColumn("Eşya Adı");
             itemName.setMinWidth(100);
             itemName.setCellValueFactory(
-                    new PropertyValueFactory<Sale, String>("name"));
+                    new PropertyValueFactory<Sale, String>("itemName"));
 
             TableColumn seller = new TableColumn("Satıcı");
             seller.setMinWidth(100);
@@ -140,13 +148,13 @@ public class profilePage {
             t.setCellValueFactory(
                     new PropertyValueFactory<Sale, String>("time"));
 
-            TableColumn z = new TableColumn("Teklif Veren");
-            z.setMinWidth(100);
-            z.setCellValueFactory(
-                    new PropertyValueFactory<Sale, String>("offer"));
+            TableColumn lastBidder = new TableColumn("Teklif Veren");
+            lastBidder.setMinWidth(100);
+            lastBidder.setCellValueFactory(
+                    new PropertyValueFactory<Sale, String>("lastBidder"));
 
             tbl_profile.setEditable(true);
-            tbl_profile.getColumns().addAll(itemName,seller,q,w,t,z);
+            tbl_profile.getColumns().addAll(itemName,seller,q,w,t,lastBidder);
             tbl_profile.getItems().addAll(data2);
 
         }
