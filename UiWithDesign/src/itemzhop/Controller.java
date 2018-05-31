@@ -8,10 +8,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import javafx.scene.control.cell.ComboBoxListCell;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
@@ -20,9 +18,11 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Controller {
     @FXML private VBox leftBox;
+    @FXML private ComboBox<String> sortSelect = new ComboBox<String>();
 
     @FXML private TableView<TableItems> storeTable = new TableView<>() ;
     @FXML private ListView<Item> listView;
@@ -32,34 +32,22 @@ public class Controller {
 
     BinarySearchTree tree = new BinarySearchTree();
     ObservableList data = FXCollections.observableList(myItem);
-
-
-
-    //storeTable içerisine items.csv içerisinde yer alan ürünlerin tamamını çekeceğiz ve her satırı bir eleman olarak ekleyeceğiz
-
-
+    ObservableList<String> options = FXCollections.observableArrayList("İsime Göre ","Fiyatı En Az Olan önce ","Fiyatı En Pahalı Olan","Zamanı En Az Kalan",
+                    "Zamanı En Çok Olan"
+            );
     @FXML
-    public void initialize() throws IOException {
+    private void comboAction(ActionEvent event) {
 
-         final ObservableList<TableItems> data =
-                FXCollections.observableArrayList();
+        System.out.println(sortSelect.getValue());
+        //TODO burda olan seçime göre veri yapısı ve üzerinde arama algoritması çalışacak
 
-        BufferedReader getUserData = new BufferedReader(new FileReader("items.csv"));
-        String[] tmpItemStr;
-        String line;
-        Item tempItem;
+    }
+    private void createSortLists(){
 
-        while ((line = getUserData.readLine()) != null) {
-            tmpItemStr = line.split(",");
-            tempItem=new Item();
-            tempItem.name=tmpItemStr[0];
-            tempItem.description=tmpItemStr[1];
-            tempItem.defaultPrice=0;
-            myItem.add(tempItem);
-            //add to binary tree
-            data.add(new TableItems(tmpItemStr[0]  +" " + tmpItemStr[1],"",tmpItemStr[1],1000));
-            tree.insert(tempItem);
-        }
+        sortSelect.setItems(options);
+        sortSelect.setCellFactory(ComboBoxListCell.forListView(options));
+    }
+    private void addItemsInTable(ObservableList<TableItems> data){
 
         TableColumn itemName = new TableColumn("Ürün Adi");
         itemName.setMinWidth(100);
@@ -84,6 +72,33 @@ public class Controller {
         storeTable.setEditable(true);
         storeTable.getColumns().addAll(itemName, seller,price,time);
         storeTable.getItems().addAll(data);
+
+    }
+    @FXML
+    public void initialize() throws IOException {
+
+         final ObservableList<TableItems> data =
+                FXCollections.observableArrayList();
+
+         Random rand = new Random();
+        BufferedReader getUserData = new BufferedReader(new FileReader("items.csv"));
+        String[] tmpItemStr;
+        String line;
+        Item tempItem;
+
+        while ((line = getUserData.readLine()) != null) {
+            tmpItemStr = line.split(",");
+            tempItem=new Item();
+            tempItem.name=tmpItemStr[0];
+            tempItem.description=tmpItemStr[1];
+            tempItem.defaultPrice=0;
+            myItem.add(tempItem);
+            //add to binary tree
+            data.add(new TableItems(tmpItemStr[0]  +" " + tmpItemStr[1],"",tmpItemStr[1],rand.nextInt(1000)));
+            tree.insert(tempItem);
+        }
+        addItemsInTable(data);
+        createSortLists();
     }
 
     //on click list alpha button and list all items in auction house
