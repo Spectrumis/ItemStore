@@ -120,17 +120,15 @@ public class Controller {
             shopItems.add(sale);
             shopItemsL.add(sale);
 
-            //add to binary tree
             data.add(new TableItems(sale.getItemName(),
                     sale.getSeller(),
                     sale.getPrice(),
                     sale.getMaxPrice(),
-                    sale.getRemainingTime()));
+                    sale.getRemainingTime(), sale.getLastBidder()));
             tree.add(sale);
         }
         addItemsInTable(data);
     }
-
 
     /**
      * pars csv line and create Sales objecjt with this paramters
@@ -175,26 +173,6 @@ public class Controller {
                 tmpItemStr[6]);                          //last bidder name
     }
 
-
-    //on click list alpha button and list all items in auction house
-    @FXML
-    void listAlpha() {
-        /*shopItems.clear();
-        tree.inorder();
-        listView.refresh();*/
-    }
-
-    //click on search button and search this item in items list
-    @FXML
-    void searchItem() throws IOException {
-       /* Sales Sale = tree.search(txt_search.getText());
-        //Sales Sale = tree.search(txt_search.getText());
-        shopItems.clear();
-        shopItems.add(Sale);
-
-        listView.refresh();*/
-    }
-
     public void loadItems(ActionEvent actionEvent) throws IOException {
         Parent home_page_parent = FXMLLoader.load(getClass().getResource("profilePage.fxml"));
         Scene home_page_scene = new Scene(home_page_parent);
@@ -205,46 +183,38 @@ public class Controller {
     }
 
     @FXML
-    private void btn_search_click(){
+    private void btn_search_click() {
 
         storeTable.getItems().clear();
         ObservableList<TableItems> data =
                 FXCollections.observableArrayList();
 
+        if (txt_search.getText() == null || txt_search.getText().isEmpty()) {
 
+            data = fillData(shopItemsL);
 
-        if(txt_search.getText() ==  null || txt_search.getText().isEmpty()){
-
-            for (Sales sale : shopItemsL)
-            {
-                TableItems it = new TableItems(sale.getItemName(),
-                        sale.getSeller(),
-                        sale.getPrice(),
-                        sale.getMaxPrice(),
-                        sale.getRemainingTime());
-
-                data.add(it);
-            }
-
-
-        }else{
+        } else {
             ArrayList<Sales> result = new ArrayList<>();
-            result = shopItems.FindAll(new Sales(txt_search.getText()),shopItemsL);
+            result = shopItems.FindAll(new Sales(txt_search.getText()), shopItemsL);
+            data = fillData(result);
 
-            for (Sales sale : result)
-            {
-                TableItems it = new TableItems(sale.getItemName(),
-                        sale.getSeller(),
-                        sale.getPrice(),
-                        sale.getMaxPrice(),
-                        sale.getRemainingTime());
-
-                data.add(it);
-            }
         }
         storeTable.setItems(data);
         storeTable.refresh();
     }
 
+    private ObservableList<TableItems> fillData(ArrayList<Sales> dataField) {
+        ObservableList<TableItems> data =
+                FXCollections.observableArrayList();
+
+        for (Sales sale : dataField) {
+            data.add(new TableItems(sale.getItemName(),
+                    sale.getSeller(),
+                    sale.getPrice(),
+                    sale.getMaxPrice(),
+                    sale.getRemainingTime(), sale.getLastBidder()));
+        }
+        return data;
+    }
 
 }
