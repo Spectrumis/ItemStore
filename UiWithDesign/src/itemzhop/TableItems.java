@@ -1,11 +1,20 @@
 package itemzhop;
 
 public class TableItems {
-    public TableItems(String name, String seller, String time, int price) {
+
+    private String name;
+    private String seller;
+    private String time;
+    private int price;
+    private int maxPrice;
+
+
+    public TableItems(String name, String seller, int price, int maxPrice, String time) {
         this.name = name;
         this.seller = seller;
         this.time = time;
         this.price = price;
+        this.maxPrice = maxPrice;
     }
 
     public String getSeller() {
@@ -20,13 +29,8 @@ public class TableItems {
         return price;
     }
 
-    public String getName() {
-        return name;
-    }
+    public int getMaxPrice(){ return maxPrice; }
 
-    public String seller;
-    public String time;
-    public int price;
-    public String name;
+    public String getName() { return name;}
 
 }
