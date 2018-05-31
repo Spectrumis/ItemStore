@@ -85,7 +85,7 @@ public class profilePage {
         String[] tmpUser;
         String line;
         BufferedReader getFoolowersData = new BufferedReader(new FileReader("followers.csv"));
-
+        BufferedReader getSalesData = new BufferedReader(new FileReader("sales.csv"));
 
         if ((line = getSessionData.readLine()) != null) {
             String sessionId=line;
@@ -93,21 +93,23 @@ public class profilePage {
                 tmpUser = line.split(",");
                 if (sessionId.equals(tmpUser[0])) {
                     System.out.println("bulduk");
-                    BufferedReader getSalesData = new BufferedReader(new FileReader("sales.csv"));
+
                     String[] tmpSale;
                     for (int i = 1; i <tmpUser.length ; i++) {
                         System.out.println("tmp user ın size :"+tmpUser.length);
                         int b=Integer.parseInt(tmpUser[i]);
                         //System.out.println(tmpUser[i]);//takip ettiklerimizin listesi. sırayla hepsinin satıştak elemanlarını yazdıralım
-                        while((line=getSalesData.readLine())!=null) {
-                            tmpSale = line.split(",");
+                        String line2="";
+                        getSalesData= new BufferedReader(new FileReader("sales.csv"));
+                        while((line2=getSalesData.readLine())!=null) {
+                            tmpSale = line2.split(",");
                                 int a=Integer.parseInt(tmpSale[0]);
 
 
                             System.out.println(a+" "+b);
                                 if (a==b){
                                     System.out.println("yakaladım");
-                                  // data2.add(new TableItems(tmpSale[1],tmpSale[2],Integer.parseInt(tmpSale[3]),Integer.parseInt(tmpSale[4]),tmpSale[5],tmpSale[6]));
+                                   data2.add(new TableItems(tmpSale[1],tmpSale[2],Integer.parseInt(tmpSale[3]),Integer.parseInt(tmpSale[4]),tmpSale[5],tmpSale[6]));
                                 }
                         }
                     }
