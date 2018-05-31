@@ -1,7 +1,5 @@
 package itemzhop.Algorithms;
 
-import itemzhop.Sales;
-
 import java.util.ArrayList;
 
 /** RedBlackTree.java

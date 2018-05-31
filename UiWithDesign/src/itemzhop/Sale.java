@@ -1,14 +1,37 @@
 package itemzhop;
 
-import java.util.UUID;
-
 /**
  * for each item's sale
  * each object shows a new item
  */
-public  class Sales implements Comparable<Sales> {
+public  class Sale implements Comparable<Sale> {
 
     private int id;
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setMaxPrice(int maxPrice) {
+        this.maxPrice = maxPrice;
+    }
+
+    public void setTime(int time) {
+        this.time = time;
+    }
+
+    public void setItemName(String itemName) {
+        this.itemName = itemName;
+    }
+
+    public void setSeller(String seller) {
+        this.seller = seller;
+    }
+
+    public static void setIdStart(int idStart) {
+        Sale.idStart = idStart;
+    }
+
     private int price;
     private int maxPrice;
     private int time;
@@ -16,14 +39,12 @@ public  class Sales implements Comparable<Sales> {
     private String itemName;
     private String seller;
     private String lastBidder;
-
-
     private static int idStart = 1000;      //star from 1000 to INF
 
 
-    public Sales(String itemName,
-                 String seller,
-                 int maxPrice){
+    public Sale(String itemName,
+                String seller,
+                int maxPrice){
 
         this.id = generateID();
 
@@ -39,14 +60,14 @@ public  class Sales implements Comparable<Sales> {
 
 
 
-    public Sales(int id,
-                 String itemName,
-                 String seller ,
-                 int price,
-                 int maxPrice,
-                 int time,
-                 String remainingTime,
-                 String lastBidder) {
+    public Sale(int id,
+                String itemName,
+                String seller ,
+                int price,
+                int maxPrice,
+                int time,
+                String remainingTime,
+                String lastBidder) {
         this.id = id;
         this.itemName = itemName;
         this.seller = seller;
@@ -57,7 +78,7 @@ public  class Sales implements Comparable<Sales> {
         this.lastBidder = lastBidder;
     }
 
-    public Sales(String name) {
+    public Sale(String name) {
         this.itemName  = name;
     }
 
@@ -144,12 +165,12 @@ public  class Sales implements Comparable<Sales> {
     }
 
     @Override
-    public int compareTo(Sales o) {
+    public int compareTo(Sale o) {
         return this.getItemName().compareTo( o.getItemName() );
     }
     @Override
     public boolean equals(Object o){
-        Sales sale = (Sales) o;
+        Sale sale = (Sale) o;
         System.out.println(this.getItemName());
         if(this.getItemName().equals(sale.getItemName())){
             System.out.println(this.getItemName());

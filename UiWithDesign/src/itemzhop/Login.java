@@ -26,7 +26,7 @@ public class Login implements Initializable{
 
     @FXML private PasswordField txt_password;
     @FXML private TextField txt_username;
-
+    static int CURRENTSESIONUSERID ;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
@@ -47,16 +47,13 @@ public class Login implements Initializable{
                     System.out.println("Succesfull!!");
                     Parent home_page_parent = FXMLLoader.load(getClass().getResource("mainFrame.fxml"));
                     Scene home_page_scene = new Scene(home_page_parent);
-
+                    CURRENTSESIONUSERID = Integer.parseInt(tmpUser[0]);
                     TextArea playerType = (TextArea) home_page_scene.lookup("#txt_player_type");
                     playerType.setText("Hoş Geldin " + tmpUser[2]);
                     playerType.setWrapText(true);
 
 
                     TextArea lblData = (TextArea) home_page_scene.lookup("#txt_playerInfo");
-//                    lblData.setText("Hoş Geldin " + txt_username.getText());
-//                    lblData.setWrapText(true);
-
                     Stage app_stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
                     app_stage.hide();
                     app_stage.setScene(home_page_scene);

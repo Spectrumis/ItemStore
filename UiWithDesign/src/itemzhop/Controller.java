@@ -24,56 +24,58 @@ import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 import java.util.Random;
 
 public class Controller {
+    @FXML
+    private Button btn_buy = new Button();
+
     @FXML
     private VBox leftBox;
     @FXML
     private ComboBox<String> sortSelect = new ComboBox<String>();
     @FXML
-    private TableView<TableItems> storeTable = new TableView<>();
-    private ArrayList<Sales> shopItemsL = new ArrayList<>();
+    private TableView<Sale> storeTable = new TableView<>();
+    private ArrayList<Sale> shopItemsL = new ArrayList<>();
     @FXML
     private ListView<Item> listView;
     @FXML
     private TextField txt_search;
 
 
-    RedBlackTree<Sales> shopItems = new RedBlackTree();
+    RedBlackTree<Sale> shopItems = new RedBlackTree();
     BinarySearchTree tree = new BinarySearchTree();
 
-    private void addItemsInTable(ObservableList<TableItems> data) {
+    private void addItemsInTable(ObservableList<Sale> data) {
 
         TableColumn itemName = new TableColumn("Ürün Adi");
         itemName.setMinWidth(100);
-        itemName.setCellValueFactory(new PropertyValueFactory<TableItems, String>("name"));
+        itemName.setCellValueFactory(new PropertyValueFactory<Sale, String>("itemName"));
 
         TableColumn seller = new TableColumn("Satıcı");
         seller.setMinWidth(100);
-        seller.setCellValueFactory(new PropertyValueFactory<TableItems, String>("seller"));
+        seller.setCellValueFactory(new PropertyValueFactory<Sale, String>("seller"));
 
         TableColumn price = new TableColumn("Teklif");
         price.setMinWidth(20);
-        price.setCellValueFactory(new PropertyValueFactory<TableItems, String>("price"));
+        price.setCellValueFactory(new PropertyValueFactory<Sale, String>("price"));
 
 
         TableColumn maxPrice = new TableColumn("Son Fiyat");
         maxPrice.setMinWidth(20);
-        maxPrice.setCellValueFactory(new PropertyValueFactory<TableItems, String>("maxPrice"));
+        maxPrice.setCellValueFactory(new PropertyValueFactory<Sale, String>("maxPrice"));
 
 
         TableColumn time = new TableColumn("Kalan Süre");
         time.setMinWidth(50);
-        time.setCellValueFactory(new PropertyValueFactory<TableItems, String>("time"));
+        time.setCellValueFactory(new PropertyValueFactory<Sale, String>("time"));
 
 
         // Table cell coloring
-        time.setCellFactory(new Callback<TableColumn<TableItems, String>, TableCell<TableItems, String>>() {
+        /*time.setCellFactory(new Callback<TableColumn<Sale, String>, TableCell<Sale, String>>() {
             @Override
-            public TableCell<TableItems, String> call(TableColumn<TableItems, String> param) {
-                return new TableCell<TableItems, String>() {
+            public TableCell<Sale, String> call(TableColumn<Sale, String> param) {
+                return new TableCell<Sale, String>() {
 
                     @Override
                     public void updateItem(String item, boolean empty) {
@@ -81,7 +83,8 @@ public class Controller {
                         if (!isEmpty()) {
                             this.setTextFill(Color.RED);
                             // Get fancy and change color based on data
-                            if (item.contains("@"))
+
+                            if (item != null && item.contains("@"))
                                 this.setTextFill(Color.BLUEVIOLET);
                             setText(item);
 
@@ -90,28 +93,24 @@ public class Controller {
 
                 };
             }
-        });
-
+        });*/
 
         storeTable.setEditable(true);
         storeTable.getColumns().addAll(itemName, seller, price, maxPrice, time);
         storeTable.getItems().addAll(data);
-
-
     }
-
 
     @FXML
     public void initialize() throws IOException {
 
-        final ObservableList<TableItems> data =
+        final ObservableList<Sale> data =
                 FXCollections.observableArrayList();
 
         Random rand = new Random();
         BufferedReader getUserData = new BufferedReader(new FileReader("sales.csv"));
         String[] tmpItemStr;
         String line;
-        Sales sale;
+        Sale sale;
 
         while ((line = getUserData.readLine()) != null) {
             tmpItemStr = line.split(",");
@@ -120,23 +119,19 @@ public class Controller {
             shopItems.add(sale);
             shopItemsL.add(sale);
 
-            data.add(new TableItems(sale.getItemName(),
-                    sale.getSeller(),
-                    sale.getPrice(),
-                    sale.getMaxPrice(),
-                    sale.getRemainingTime(), sale.getLastBidder()));
+            data.add(sale);
             tree.add(sale);
         }
         addItemsInTable(data);
     }
 
     /**
-     * pars csv line and create Sales objecjt with this paramters
+     * pars csv line and create Sale objecjt with this paramters
      *
      * @param tmpItemStr a line of csve file
-     * @return Sales object that a line for a item's sale
+     * @return Sale object that a line for a item's sale
      */
-    private Sales createSale(String[] tmpItemStr) {
+    private Sale createSale(String[] tmpItemStr) {
         long timeData;
         int time;       //time left as integer in seconds
         int seconds = 0;
@@ -162,7 +157,7 @@ public class Controller {
             days = (int) ((timeData / (60 * 60 * 24)) % 7);
         }
 
-        return new Sales(Integer.parseInt(tmpItemStr[0]),       //id
+        return new Sale(Integer.parseInt(tmpItemStr[0]),       //id
                 tmpItemStr[1],                          //item name
                 tmpItemStr[2],                          //seller
                 Integer.parseInt(tmpItemStr[3]),        //price
@@ -181,12 +176,11 @@ public class Controller {
         app_stage.setScene(home_page_scene);
         app_stage.show();
     }
-
     @FXML
     private void btn_search_click() {
 
         storeTable.getItems().clear();
-        ObservableList<TableItems> data =
+        ObservableList<Sale> data =
                 FXCollections.observableArrayList();
 
         if (txt_search.getText() == null || txt_search.getText().isEmpty()) {
@@ -194,27 +188,29 @@ public class Controller {
             data = fillData(shopItemsL);
 
         } else {
-            ArrayList<Sales> result = new ArrayList<>();
-            result = shopItems.FindAll(new Sales(txt_search.getText()), shopItemsL);
+            ArrayList<Sale> result = new ArrayList<>();
+            result = shopItems.FindAll(new Sale(txt_search.getText()), shopItemsL);
             data = fillData(result);
-
         }
         storeTable.setItems(data);
         storeTable.refresh();
     }
 
-    private ObservableList<TableItems> fillData(ArrayList<Sales> dataField) {
-        ObservableList<TableItems> data =
+    private ObservableList<Sale> fillData(ArrayList<Sale> dataField) {
+        ObservableList<Sale> data =
                 FXCollections.observableArrayList();
-
-        for (Sales sale : dataField) {
-            data.add(new TableItems(sale.getItemName(),
-                    sale.getSeller(),
-                    sale.getPrice(),
-                    sale.getMaxPrice(),
-                    sale.getRemainingTime(), sale.getLastBidder()));
+        for (Sale sale : dataField) {
+            data.add(sale);
         }
         return data;
+    }
+    @FXML
+    public void itemBuy(){
+        Sale selected= storeTable.getSelectionModel().getSelectedItem();
+        System.out.println(selected.toString());
+        String str = Login.CURRENTSESIONUSERID+ ", " + selected.getId()  ;
+        File.AppendStringFile( str, File.USERSITEM);
+
     }
 
 }

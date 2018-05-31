@@ -18,7 +18,7 @@ public class profilePage {
     @FXML
     Button btn_arkadaslar=new Button();
     @FXML
-    private TableView<TableItems> tbl_profile = new TableView<>() ;
+    private TableView<Sale> tbl_profile = new TableView<>() ;
     @FXML private ListView<Item> listView;
 
     @FXML private TextField txt_search;
@@ -37,7 +37,7 @@ public class profilePage {
         tbl_profile.getColumns().clear();
         tbl_profile.getItems().clear();
 
-        final ObservableList<TableItems> data =
+        final ObservableList<Sale> data =
                 FXCollections.observableArrayList();
 
         BufferedReader getUserData = new BufferedReader(new FileReader("accounts.csv"));
@@ -53,19 +53,18 @@ public class profilePage {
             tempItem.defaultPrice=0;
             myItem.add(tempItem);
 
-            data.add(new TableItems(tmpItemStr[1],tmpItemStr[3],100,5000,"1000","ahmet"));
-
+            //data.add(new Sale( new Sale(tmpItemStr[1],"",500,100,"") );
         }
 
         TableColumn itemName = new TableColumn("Kullanıcı Adı");
         itemName.setMinWidth(100);
         itemName.setCellValueFactory(
-                new PropertyValueFactory<TableItems, String>("name"));
+                new PropertyValueFactory<Sale, String>("name"));
 
         TableColumn seller = new TableColumn("Kullanıcı Türü");
         seller.setMinWidth(100);
         seller.setCellValueFactory(
-                new PropertyValueFactory<TableItems, String>("seller"));
+                new PropertyValueFactory<Sale, String>("seller"));
 
 
 
@@ -79,7 +78,7 @@ public class profilePage {
     public void loadFriendItems() throws IOException {
         tbl_profile.getColumns().clear();
         tbl_profile.getItems().clear();
-        final ObservableList<TableItems> data2 =
+        final ObservableList<Sale> data2 =
                 FXCollections.observableArrayList();
         BufferedReader getSessionData = new BufferedReader(new FileReader("session.csv"));
         String[] tmpUser;
@@ -109,7 +108,8 @@ public class profilePage {
                             System.out.println(a+" "+b);
                                 if (a==b){
                                     System.out.println("yakaladım");
-                                   data2.add(new TableItems(tmpSale[1],tmpSale[2],Integer.parseInt(tmpSale[3]),Integer.parseInt(tmpSale[4]),tmpSale[5],tmpSale[6]));
+                                   //data2.add(new Sale(tmpSale[1],tmpSale[2],Integer.parseInt(tmpSale[3]),Integer.parseInt(tmpSale[4]),tmpSale[5],tmpSale[6]));
+
                                 }
                         }
                     }
@@ -120,30 +120,30 @@ public class profilePage {
             TableColumn itemName = new TableColumn("Eşya Adı");
             itemName.setMinWidth(100);
             itemName.setCellValueFactory(
-                    new PropertyValueFactory<TableItems, String>("name"));
+                    new PropertyValueFactory<Sale, String>("name"));
 
             TableColumn seller = new TableColumn("Satıcı");
             seller.setMinWidth(100);
             seller.setCellValueFactory(
-                    new PropertyValueFactory<TableItems, String>("seller"));
+                    new PropertyValueFactory<Sale, String>("seller"));
             TableColumn q = new TableColumn("Ücret");
             q.setMinWidth(100);
             q.setCellValueFactory(
-                    new PropertyValueFactory<TableItems, Integer>("price"));
+                    new PropertyValueFactory<Sale, Integer>("price"));
 
             TableColumn w = new TableColumn("Maksimum Ücret");
             w.setMinWidth(100);
             w.setCellValueFactory(
-                    new PropertyValueFactory<TableItems, Integer>("maxPrice"));
+                    new PropertyValueFactory<Sale, Integer>("maxPrice"));
             TableColumn t = new TableColumn("Zaman");
             t.setMinWidth(100);
             t.setCellValueFactory(
-                    new PropertyValueFactory<TableItems, String>("time"));
+                    new PropertyValueFactory<Sale, String>("time"));
 
             TableColumn z = new TableColumn("Teklif Veren");
             z.setMinWidth(100);
             z.setCellValueFactory(
-                    new PropertyValueFactory<TableItems, String>("offer"));
+                    new PropertyValueFactory<Sale, String>("offer"));
 
             tbl_profile.setEditable(true);
             tbl_profile.getColumns().addAll(itemName,seller,q,w,t,z);
