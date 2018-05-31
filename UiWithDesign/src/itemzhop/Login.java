@@ -42,7 +42,8 @@ public class Login implements Initializable{
 
             while ((line = getUserData.readLine()) != null) {
                 tmpUser = line.split(",");
-                if (tmpUser[0].equals(txt_username.getText()) && tmpUser[1].equals(txt_password.getText())) {
+                System.out.println("dosyayı açtım kontrol edicem");
+                if (tmpUser[1].equals(txt_username.getText()) && tmpUser[2].equals(txt_password.getText())) {
                     System.out.println("Succesfull!!");
                     Parent home_page_parent = FXMLLoader.load(getClass().getResource("mainFrame.fxml"));
                     Scene home_page_scene = new Scene(home_page_parent);

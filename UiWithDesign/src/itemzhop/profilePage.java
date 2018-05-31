@@ -50,7 +50,7 @@ public class profilePage {
             tempItem.defaultPrice=0;
             myItem.add(tempItem);
 
-            data.add(new TableItems(tmpItemStr[0],tmpItemStr[2],100,5000,"1000"));
+            data.add(new TableItems(tmpItemStr[1],tmpItemStr[3],100,5000,"1000"));
 
         }
 
