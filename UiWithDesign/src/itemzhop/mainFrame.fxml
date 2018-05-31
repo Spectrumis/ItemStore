@@ -26,7 +26,7 @@
       <children>
             <Pane id="" fx:id="" layoutX="17.0" layoutY="11.0" prefHeight="242.0" prefWidth="309.0">
                <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" height="43.0" layoutY="114.0" stroke="BLACK" strokeType="INSIDE" width="114.0">
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="39.0" layoutX="7.0" layoutY="118.0" stroke="BLACK" strokeType="INSIDE" width="107.0">
               <fill>
                 <Color blue="0.200" green="1.000" red="0.839" fx:id="x2" />
               </fill>

@@ -17,6 +17,8 @@ public class TableItems {
         this.maxPrice = maxPrice;
     }
 
+
+
     public String getSeller() {
         return seller;
     }
