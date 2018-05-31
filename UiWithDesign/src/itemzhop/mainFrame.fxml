@@ -2,7 +2,6 @@
 
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TableView?>
@@ -26,7 +25,7 @@
       <children>
             <Pane id="" fx:id="" layoutX="17.0" layoutY="11.0" prefHeight="242.0" prefWidth="309.0">
                <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" height="43.0" layoutY="114.0" stroke="BLACK" strokeType="INSIDE" width="114.0">
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="39.0" layoutX="7.0" layoutY="118.0" stroke="BLACK" strokeType="INSIDE" width="107.0">
               <fill>
                 <Color blue="0.200" green="1.000" red="0.839" fx:id="x2" />
               </fill>
@@ -69,7 +68,6 @@
                   </TableView>
                   <TextField id="nameSearch" fx:id="txt_search" layoutX="631.0" layoutY="14.0" prefHeight="25.0" prefWidth="123.0" promptText="search" />
                   <Button layoutX="754.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#searchItem" prefHeight="26.0" prefWidth="66.0" text="Search" />
-                  <ComboBox id="sortSelect" fx:id="sortSelect" layoutX="622.0" layoutY="69.0" onAction="#comboAction" prefHeight="25.0" prefWidth="183.0" />
                </children>
             </Pane>
             <Label layoutX="383.0" prefHeight="39.0" prefWidth="255.0" text="Açık Artırma Evi">
