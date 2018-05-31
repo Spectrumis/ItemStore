@@ -6,7 +6,7 @@ import java.util.UUID;
  * for each item's sale
  * each object shows a new item
  */
-public  class Sales {
+public  class Sales implements Comparable<Sales> {
 
     private int id;
     private int price;
@@ -138,4 +138,9 @@ public  class Sales {
     public String toString() {
         return  itemName.toString()+"  -  "+seller.toString()+"  -  "+ price + lastBidder.toString();
     }
+
+    @Override
+    public int compareTo(Sales o) {
+        return this.getItemName().compareTo( o.getItemName() );
+        }
 }

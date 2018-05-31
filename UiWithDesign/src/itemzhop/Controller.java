@@ -1,5 +1,6 @@
 package itemzhop;
 
+import itemzhop.Algorithms.RedBlackTree;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -9,7 +10,6 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.control.cell.ComboBoxListCell;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
@@ -21,48 +21,27 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
-import java.time.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Random;
 
 public class Controller {
-    @FXML private VBox leftBox;
-    @FXML private ComboBox<String> sortSelect = new ComboBox<String>();
-
-    @FXML private TableView<TableItems> storeTable = new TableView<>() ;
-    @FXML private ListView<Item> listView;
-
-    @FXML private TextField txt_search;
-
-    ArrayList<Sales> myItem=new ArrayList<>( );
-
-    BinarySearchTree tree = new BinarySearchTree();
-    ObservableList data = FXCollections.observableList(myItem);
-    ObservableList<String> options = FXCollections.observableArrayList(
-            "İsime Göre ",
-                    "Fiyatı En Az Olan önce ",
-                    "Fiyatı En Pahalı Olan",
-                    "Zamanı En Az Kalan",
-                    "Zamanı En Çok Olan"
-            );
     @FXML
-    private void comboAction(ActionEvent event) {
-
-        System.out.println(sortSelect.getValue());
-        //TODO burda olan seçime göre veri yapısı ve üzerinde arama algoritması çalışacak
-
-    }
-
-
-    private void createSortLists(){
-
-        sortSelect.setItems(options);
-        sortSelect.setCellFactory(ComboBoxListCell.forListView(options));
-    }
+    private VBox leftBox;
+    @FXML
+    private ComboBox<String> sortSelect = new ComboBox<String>();
+    @FXML
+    private TableView<TableItems> storeTable = new TableView<>();
+    @FXML
+    private ListView<Item> listView;
+    @FXML
+    private TextField txt_search;
 
 
-    private void addItemsInTable(ObservableList<TableItems> data){
+    RedBlackTree<Sales> shopItems = new RedBlackTree();
+    BinarySearchTree tree = new BinarySearchTree();
+
+    private void addItemsInTable(ObservableList<TableItems> data) {
 
         TableColumn itemName = new TableColumn("Ürün Adi");
         itemName.setMinWidth(100);
@@ -87,7 +66,6 @@ public class Controller {
         time.setCellValueFactory(new PropertyValueFactory<TableItems, String>("time"));
 
 
-
         // Table cell coloring
         time.setCellFactory(new Callback<TableColumn<TableItems, String>, TableCell<TableItems, String>>() {
             @Override
@@ -100,7 +78,7 @@ public class Controller {
                         if (!isEmpty()) {
                             this.setTextFill(Color.RED);
                             // Get fancy and change color based on data
-                            if(item.contains("@"))
+                            if (item.contains("@"))
                                 this.setTextFill(Color.BLUEVIOLET);
                             setText(item);
 
@@ -110,7 +88,6 @@ public class Controller {
                 };
             }
         });
-
 
 
         storeTable.setEditable(true);
@@ -124,38 +101,35 @@ public class Controller {
     @FXML
     public void initialize() throws IOException {
 
-         final ObservableList<TableItems> data =
+        final ObservableList<TableItems> data =
                 FXCollections.observableArrayList();
 
-         Random rand = new Random();
+        Random rand = new Random();
         BufferedReader getUserData = new BufferedReader(new FileReader("sales.csv"));
         String[] tmpItemStr;
         String line;
-        Sales Sale;
+        Sales sale;
 
         while ((line = getUserData.readLine()) != null) {
             tmpItemStr = line.split(",");
 
-            Sale = createSale(tmpItemStr);
-
-
-            myItem.add(Sale);
+            sale = createSale(tmpItemStr);
+            shopItems.insert(sale);
             //add to binary tree
-            data.add(new TableItems(Sale.getItemName(),
-                                    Sale.getSeller(),
-                                    Sale.getPrice(),
-                                    Sale.getMaxPrice(),
-                                    Sale.getRemainingTime()));
-            tree.insert(Sale);
+            data.add(new TableItems(sale.getItemName(),
+                    sale.getSeller(),
+                    sale.getPrice(),
+                    sale.getMaxPrice(),
+                    sale.getRemainingTime()));
+            tree.insert(sale);
         }
         addItemsInTable(data);
-        createSortLists();
-
     }
 
 
     /**
      * pars csv line and create Sales objecjt with this paramters
+     *
      * @param tmpItemStr a line of csve file
      * @return Sales object that a line for a item's sale
      */
@@ -172,12 +146,12 @@ public class Controller {
 
         timeData = Long.parseLong(tmpItemStr[5]);      //time convertion
 
-        long currentTime = (new Date()).getTime()/1000;
+        long currentTime = (new Date()).getTime() / 1000;
 
 
         timeData = timeData - currentTime;
         time = (int) timeData;
-        if(timeData > 0) {
+        if (timeData > 0) {
 
             seconds = (int) ((timeData) % 60);
             minutes = (int) ((timeData / 60) % 60);
@@ -197,25 +171,23 @@ public class Controller {
     }
 
 
-
-
     //on click list alpha button and list all items in auction house
     @FXML
-    void listAlpha(){
-        myItem.clear();
+    void listAlpha() {
+        /*shopItems.clear();
         tree.inorder();
-        listView.refresh();
+        listView.refresh();*/
     }
 
     //click on search button and search this item in items list
     @FXML
     void searchItem() throws IOException {
-        Sales  Sale = tree.search(txt_search.getText());
+       /* Sales Sale = tree.search(txt_search.getText());
         //Sales Sale = tree.search(txt_search.getText());
-        myItem.clear();
-        myItem.add(Sale);
+        shopItems.clear();
+        shopItems.add(Sale);
 
-        listView.refresh();
+        listView.refresh();*/
     }
 
     // Java program to demonstrate insert operation in binary search tree
@@ -255,9 +227,9 @@ public class Controller {
             }
 
             /* Otherwise, recur down the tree */
-            if (key.getItemName().compareTo(root.key.getItemName()) <0)
+            if (key.getItemName().compareTo(root.key.getItemName()) < 0)
                 root.left = insertRec(root.left, key);
-            else if (key.getItemName().compareTo(root.key.getItemName())>0)
+            else if (key.getItemName().compareTo(root.key.getItemName()) > 0)
                 root.right = insertRec(root.right, key);
 
             /* return the (unchanged) node pointer */
@@ -265,7 +237,7 @@ public class Controller {
         }
 
         // This method mainly calls InorderRec()
-        void inorder()  {
+        void inorder() {
             inorderRec(root);
         }
 
@@ -273,17 +245,17 @@ public class Controller {
         void inorderRec(Node root) {
             if (root != null) {
                 inorderRec(root.left);
-                myItem.add(root.key);
+                shopItems.insert(root.key);
                 //System.out.println(root.key);
                 inorderRec(root.right);
             }
         }
 
-        Sales search(String target){
-            return search(root,  target);
+        Sales search(String target) {
+            return search(root, target);
         }
 
-        Sales search(Node root, String target){
+        Sales search(Node root, String target) {
             if (target.compareTo(root.key.getItemName()) < 0)
                 return search(root.left, target);
             if (target.compareTo(root.key.getItemName()) > 0)
@@ -296,9 +268,9 @@ public class Controller {
 
 
     public void loadItems(ActionEvent actionEvent) throws IOException {
-        Parent home_page_parent= FXMLLoader.load(getClass().getResource("profilePage.fxml"));
-        Scene home_page_scene=new Scene(home_page_parent);
-        Stage app_stage=(Stage)((Node) actionEvent.getSource()).getScene().getWindow();
+        Parent home_page_parent = FXMLLoader.load(getClass().getResource("profilePage.fxml"));
+        Scene home_page_scene = new Scene(home_page_parent);
+        Stage app_stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         app_stage.hide();
         app_stage.setScene(home_page_scene);
         app_stage.show();
