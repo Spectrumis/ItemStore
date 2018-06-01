@@ -22,23 +22,17 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Login implements Initializable{
+public class Login{
 
     @FXML private PasswordField txt_password;
     @FXML private TextField txt_username;
-    static int CURRENTSESIONUSERID ;
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
 
-    }
 
     public void handleButtonAction(ActionEvent actionEvent) throws IOException {
 
         BufferedReader getUserData = new BufferedReader(new FileReader("accounts.csv"));
         String[] tmpUser;
         String line;
-
-
 
             while ((line = getUserData.readLine()) != null) {
                 tmpUser = line.split(",");
@@ -47,12 +41,6 @@ public class Login implements Initializable{
                     System.out.println("Succesfull!!");
                     Parent home_page_parent = FXMLLoader.load(getClass().getResource("mainFrame.fxml"));
                     Scene home_page_scene = new Scene(home_page_parent);
-                    CURRENTSESIONUSERID = Integer.parseInt(tmpUser[0]);
-                    TextArea playerType = (TextArea) home_page_scene.lookup("#txt_player_type");
-                    playerType.setText("Hoş Geldin " + tmpUser[2]);
-                    playerType.setWrapText(true);
-
-
                     TextArea lblData = (TextArea) home_page_scene.lookup("#txt_playerInfo");
                     Stage app_stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
                     app_stage.hide();

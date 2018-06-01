@@ -24,6 +24,7 @@ import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Optional;
 import java.util.Random;
 
 public class Controller {
@@ -204,13 +205,22 @@ public class Controller {
         }
         return data;
     }
-    @FXML
-    public void itemBuy(){
-        Sale selected= storeTable.getSelectionModel().getSelectedItem();
-        System.out.println(selected.toString());
-        String str = Login.CURRENTSESIONUSERID+ ", " + selected.getId()  ;
-        File.AppendStringFile( str, File.USERSITEM);
 
+    public void itemBuy(ActionEvent actionEvent) throws IOException {
+
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Onay Ekranı");
+        alert.setHeaderText("Ürünü Almayı Onaylıyormusunuz");
+        alert.setContentText("Onaylansınmı ?    ");
+
+        Optional<ButtonType> result = alert.showAndWait();
+        if (result.get() == ButtonType.OK) {
+            Sale selected = storeTable.getSelectionModel().getSelectedItem();
+            System.out.println(selected.toString());
+            String str = FileOpearation.getSessionId() + "," + selected.getId();
+            FileOpearation.AppendStringFile(str, "USERITEMS");
+            
+        }
     }
 
 }
