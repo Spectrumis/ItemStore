@@ -39,10 +39,7 @@ public class Controller {
     private TableView<Sale> storeTable = new TableView<>();
     private ArrayList<Sale> shopItemsL = new ArrayList<>();
     @FXML
-    private ListView<Item> listView;
-    @FXML
     private TextField txt_search;
-
 
     RedBlackTree<Sale> shopItems = new RedBlackTree();
     BinarySearchTree tree = new BinarySearchTree();
@@ -69,32 +66,8 @@ public class Controller {
 
         TableColumn time = new TableColumn("Kalan Süre");
         time.setMinWidth(50);
-        time.setCellValueFactory(new PropertyValueFactory<Sale, String>("time"));
+        time.setCellValueFactory(new PropertyValueFactory<Sale, String>("remainingTime"));
 
-
-        // Table cell coloring
-        /*time.setCellFactory(new Callback<TableColumn<Sale, String>, TableCell<Sale, String>>() {
-            @Override
-            public TableCell<Sale, String> call(TableColumn<Sale, String> param) {
-                return new TableCell<Sale, String>() {
-
-                    @Override
-                    public void updateItem(String item, boolean empty) {
-                        super.updateItem(item, empty);
-                        if (!isEmpty()) {
-                            this.setTextFill(Color.RED);
-                            // Get fancy and change color based on data
-
-                            if (item != null && item.contains("@"))
-                                this.setTextFill(Color.BLUEVIOLET);
-                            setText(item);
-
-                        }
-                    }
-
-                };
-            }
-        });*/
 
         storeTable.setEditable(true);
         storeTable.getColumns().addAll(itemName, seller, price, maxPrice, time);
@@ -220,6 +193,20 @@ public class Controller {
             String str = FileOpearation.getSessionId() + "," + selected.getId();
             FileOpearation.AppendStringFile(str, "USERITEMS");
             
+        }
+    }
+    public void btn_create_click(ActionEvent actionEvent)  {
+        //Load create item page
+
+        try {
+            Parent home_page_parent = FXMLLoader.load(getClass().getResource("create_Item.fxml"));
+            Scene home_page_scene = new Scene(home_page_parent);
+            Stage app_stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+            app_stage.hide();
+            app_stage.setScene(home_page_scene);
+            app_stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
