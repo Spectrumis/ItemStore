@@ -34,6 +34,21 @@ public  class Sale implements Comparable<Sale> {
 
     private int price;
     private int maxPrice;
+
+    @Override
+    public String toString() {
+        return "Sale{" +
+                "id=" + id +
+                ", price=" + price +
+                ", maxPrice=" + maxPrice +
+                ", time=" + time +
+                ", remainingTime='" + remainingTime + '\'' +
+                ", itemName='" + itemName + '\'' +
+                ", seller='" + seller + '\'' +
+                ", lastBidder='" + lastBidder + '\'' +
+                '}';
+    }
+
     private int time;
     private String remainingTime;
     private String itemName;
@@ -159,10 +174,6 @@ public  class Sale implements Comparable<Sale> {
     }
 
 
-    @Override
-    public String toString() {
-        return  itemName.toString()+"  -  "+seller.toString()+"  -  "+ price + lastBidder.toString();
-    }
 
     @Override
     public int compareTo(Sale o) {

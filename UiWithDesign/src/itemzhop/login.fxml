@@ -17,11 +17,11 @@
                   <Image url="@background-blur.jpg" />
                </image>
             </ImageView>
-            <TextField fx:id="txt_username" layoutX="87.0" layoutY="117.0" promptText="User name" />
-            <PasswordField fx:id="txt_password" layoutX="87.0" layoutY="152.0" promptText="Password" />
+            <TextField fx:id="txt_username" layoutX="87.0" layoutY="117.0" promptText="Kullanıcı Adı" />
+            <PasswordField fx:id="txt_password" layoutX="87.0" layoutY="152.0" promptText="Şifre" />
 
-            <Button fx:id="btnLogin" layoutX="87.0" layoutY="199.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="170.0" text="Login" />
-            <Button fx:id="btn_Cancel" layoutX="87.0" layoutY="246.0" mnemonicParsing="false" onAction="#backToDoChoseWindow" prefHeight="26.0" prefWidth="170.0" text="Cancel" />
+            <Button fx:id="btnLogin" layoutX="87.0" layoutY="199.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="170.0" text="Giriş" />
+            <Button fx:id="btn_Cancel" layoutX="87.0" layoutY="246.0" mnemonicParsing="false" onAction="#backToDoChoseWindow" prefHeight="26.0" prefWidth="170.0" text="İptal" />
 
          </children>
       </Pane>

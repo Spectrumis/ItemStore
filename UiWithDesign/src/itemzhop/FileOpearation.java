@@ -12,16 +12,18 @@ public class FileOpearation {
     public static final String ACCOUNT= "account.csv";
     public static final String FOLLOWERS= "account.csv";
     public static final String ITEMS= "items.csv";
+    public static final String TEMP= "temp.csv";
 
-    public static void AppendStringFile(String str,String option ){
+    public static void AppendStringFile(String str,String option,boolean append ){
         try {
             switch (option) {
-                case "USERITEMS": fileWriter = new FileWriter(USERSITEMS,true); break;
-                case "SESSION": fileWriter = new FileWriter(SESSION,true); break;
-                case "SALES": fileWriter = new FileWriter(SALES,true); break;
-                case "ACCOUNT": fileWriter = new FileWriter(ACCOUNT,true); break;
-                case "FOLLOWERS": fileWriter = new FileWriter(FOLLOWERS,true); break;
-                case "ITEMS": fileWriter = new FileWriter(ITEMS,true); break;
+                case "USERITEMS": fileWriter = new FileWriter(USERSITEMS,append); break;
+                case "SESSION": fileWriter = new FileWriter(SESSION,append); break;
+                case "SALES": fileWriter = new FileWriter(SALES,append); break;
+                case "ACCOUNT": fileWriter = new FileWriter(ACCOUNT,append); break;
+                case "FOLLOWERS": fileWriter = new FileWriter(FOLLOWERS,append); break;
+                case "ITEMS": fileWriter = new FileWriter(ITEMS,append); break;
+                case "TEMP": fileWriter = new FileWriter(TEMP,append); break;
             }
             if(fileWriter != null){
                 fileWriter.write(str+"\n");
@@ -51,4 +53,5 @@ public class FileOpearation {
 
         return -1;
     }
+
 }

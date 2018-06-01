@@ -191,7 +191,7 @@ public class Controller {
             Sale selected = storeTable.getSelectionModel().getSelectedItem();
             System.out.println(selected.toString());
             String str = FileOpearation.getSessionId() + "," + selected.getId();
-            FileOpearation.AppendStringFile(str, "USERITEMS");
+            FileOpearation.AppendStringFile(str, "USERITEMS",true);
             
         }
     }
@@ -209,5 +209,38 @@ public class Controller {
             e.printStackTrace();
         }
     }
+    @FXML
+    public void btn_offer_item_clicked(ActionEvent actionEvent) {
 
+
+        Sale selected = storeTable.getSelectionModel().getSelectedItem();
+        for(int i = 0; i < shopItemsL.size(); ++ i) {
+            if (shopItemsL.get(i).getId() == selected.getId()
+                    && shopItemsL.get(i).getItemName().equals(selected.getItemName())
+                    && shopItemsL.get(i).getSeller().equals(selected.getSeller())) {
+                shopItemsL.remove(i);
+            }
+
+        }
+        System.out.println(selected.toString());
+        String str = selected.toString();
+        FileOpearation.AppendStringFile(str, "TEMP",false);
+
+
+        Parent home_page_parent = null;
+        try {
+            home_page_parent = FXMLLoader.load(getClass().getResource("offer_item.fxml"));
+            Scene home_page_scene = new Scene(home_page_parent);
+            Stage app_stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+            app_stage.hide();
+            app_stage.setScene(home_page_scene);
+            app_stage.show();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+
+    }
 }

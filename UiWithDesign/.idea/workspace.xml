@@ -12,96 +12,80 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/itemzhop/Main.java">
+      <file leaf-file-name="ItemIncomingOfferController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/itemzhop/ItemIncomingOfferController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+            <state relative-caret-position="289">
+              <caret line="24" column="16" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mainFrame.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/itemzhop/mainFrame.fxml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="1122">
-              <caret line="66" column="34" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="34" />
-            </state>
-          </provider>
+      <file leaf-file-name="profilePage.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/itemzhop/profilePage.fxml">
+          <provider editor-type-id="text-editor" />
           <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
-      <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/itemzhop/Login.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.fxml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="login.fxml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/itemzhop/login.fxml">
           <provider editor-type-id="text-editor" />
           <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/itemzhop/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="219" column="12" selection-start-line="219" selection-start-column="12" selection-end-line="219" selection-end-column="12" />
+      <file leaf-file-name="mainFrame.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/itemzhop/mainFrame.fxml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="63" column="144" selection-start-line="63" selection-start-column="122" selection-end-line="63" selection-end-column="144" />
             </state>
           </provider>
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
-      <file leaf-file-name="CreateItem.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/itemzhop/CreateItem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="43" column="40" selection-start-line="43" selection-start-column="6" selection-end-line="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+      <file leaf-file-name="item.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/itemzhop/item.fxml">
+          <provider editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file leaf-file-name="createAccount.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/itemzhop/createAccount.fxml">
+          <provider editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file leaf-file-name="create_Item.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/itemzhop/create_Item.fxml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
             </state>
           </provider>
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
-      <file leaf-file-name="session.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/session.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
+      <file leaf-file-name="chooseWindow.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/itemzhop/chooseWindow.fxml">
+          <provider editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file leaf-file-name="offer_item.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/itemzhop/offer_item.fxml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="130" selection-start-line="12" selection-start-column="130" selection-end-line="12" selection-end-column="130" />
             </state>
           </provider>
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
-      <file leaf-file-name="usersItems.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/usersItems.csv">
+      <file leaf-file-name="OfferItems.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/itemzhop/OfferItems.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileOpearation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/itemzhop/FileOpearation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreateAccount.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/itemzhop/CreateAccount.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="52" column="30" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="30" />
+            <state relative-caret-position="360">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,13 +114,21 @@
       <find>data2</find>
       <find>loadFriendItems</find>
       <find>loadItems</find>
-      <find>txt_search</find>
       <find>btn_arkadaslar</find>
       <find>FileWriter</find>
       <find>writer</find>
       <find>fileReader</find>
       <find>playerType</find>
       <find>itemBuy</find>
+      <find>CreateItem</find>
+      <find>btn_create_item_Click</find>
+      <find>back</find>
+      <find>btn_offer_item_clicked</find>
+      <find>btn_upload_click</find>
+      <find>initial</find>
+      <find>txt_search</find>
+      <find>setText</find>
+      <find>btn_create_clicked</find>
     </findStrings>
     <replaceStrings>
       <replace>Sale</replace>
@@ -151,20 +143,28 @@
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/itemzhop/FileOperation.java" />
         <option value="$PROJECT_DIR$/src/itemzhop/Sales.java" />
-        <option value="$PROJECT_DIR$/src/itemzhop/Sale.java" />
         <option value="$PROJECT_DIR$/src/itemzhop/TableItems.java" />
         <option value="$PROJECT_DIR$/src/test/TestAhmet.java" />
         <option value="$PROJECT_DIR$/src/itemzhop/profilePage.fxml" />
         <option value="$PROJECT_DIR$/src/itemzhop/profilePage.java" />
-        <option value="$PROJECT_DIR$/src/itemzhop/CreateItem.java" />
         <option value="$PROJECT_DIR$/src/itemzhop/Create_Item.fxml" />
-        <option value="$PROJECT_DIR$/src/itemzhop/mainFrame.fxml" />
         <option value="$PROJECT_DIR$/usersItems.csv" />
         <option value="$PROJECT_DIR$/src/itemzhop/Main.java" />
         <option value="$PROJECT_DIR$/src/itemzhop/Login.java" />
         <option value="$PROJECT_DIR$/src/itemzhop/File.java" />
-        <option value="$PROJECT_DIR$/src/itemzhop/FileOpearation.java" />
+        <option value="$PROJECT_DIR$/src/itemzhop/CreateItem.java" />
+        <option value="$PROJECT_DIR$/src/itemzhop/create_Item.fxml" />
+        <option value="$PROJECT_DIR$/src/offer_item.fxml" />
+        <option value="$PROJECT_DIR$/src/itemzhop/Sale.java" />
+        <option value="$PROJECT_DIR$/temp.csv" />
         <option value="$PROJECT_DIR$/src/itemzhop/Controller.java" />
+        <option value="$PROJECT_DIR$/src/itemzhop/FileOpearation.java" />
+        <option value="$PROJECT_DIR$/src/itemzhop/OfferItems.java" />
+        <option value="$PROJECT_DIR$/src/itemzhop/offer_item.fxml" />
+        <option value="$PROJECT_DIR$/src/itemzhop/mainFrame.fxml" />
+        <option value="$PROJECT_DIR$/src/itemzhop/createAccount.fxml" />
+        <option value="$PROJECT_DIR$/src/itemzhop/chooseWindow.fxml" />
+        <option value="$PROJECT_DIR$/src/itemzhop/login.fxml" />
       </list>
     </option>
   </component>
@@ -178,7 +178,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="858" />
+    <option name="y" value="33" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -187,7 +188,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,7 +212,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -219,7 +220,13 @@
     <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\GitKrakenRepository\CSE222Project\ItemStore\UiWithDesign\src\itemzhop" />
+      <recent name="F:\GitKrakenRepository\CSE222Project\ItemStore\UiWithDesign\src" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\GitKrakenRepository\CSE222Project\ItemStore\UiWithDesign\src" />
+      <recent name="F:\GitKrakenRepository\CSE222Project\ItemStore\UiWithDesign\src\itemzhop" />
       <recent name="F:\GitKrakenRepository\CSE222Project\ItemStore\UiWithDesign" />
     </key>
   </component>
@@ -311,7 +318,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25615000" />
+    <option name="totallyTimeSpent" value="31674000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -326,25 +333,46 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21436115" />
       <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21436115" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13958333" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13958333" />
       <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32946146" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32629356" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39915523" />
       <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39915523" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="Designer" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21436115" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39915523" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13958333" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
@@ -362,7 +390,7 @@
       <window_info id="Designer" order="3" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32946146" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32629356" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="bottom" id="Terminal" order="8" />
@@ -387,70 +415,22 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/itemzhop/FileOpearation.java</url>
-          <line>18</line>
+          <url>file://$PROJECT_DIR$/src/itemzhop/OfferItems.java</url>
+          <line>45</line>
           <properties />
-          <option name="timeStamp" value="12" />
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/itemzhop/FileOpearation.java</url>
-          <line>19</line>
+          <url>file://$PROJECT_DIR$/src/itemzhop/OfferItems.java</url>
+          <line>43</line>
           <properties />
-          <option name="timeStamp" value="13" />
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="18" />
+      <option name="time" value="22" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28050">
-          <caret line="1773" selection-start-line="1773" selection-end-line="1773" />
-          <folding>
-            <element signature="e#66921#66922#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/itemzhop/CreateItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/awt/Image.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/itemzhop/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2839">
-          <caret line="193" column="58" selection-start-line="193" selection-start-column="48" selection-end-line="193" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/itemzhop/profilePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/itemzhop/profilePage.fxml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/itemzhop/Sale.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1105">
@@ -458,14 +438,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/itemzhop/Create_Item.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/itemzhop/create_Item.fxml" />
     <entry file="file://$PROJECT_DIR$/src/itemzhop/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -578,24 +551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/itemzhop/chooseWindow.fxml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/itemzhop/Sale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="77" column="23" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/itemzhop/profilePage.fxml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/items.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/sales.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -603,45 +558,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/itemzhop/profilePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/itemzhop/Create_Item.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/awt/Image.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/itemzhop/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="1657" selection-start-line="1657" selection-end-line="1657" />
-          <folding>
-            <element signature="e#66921#66922#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -666,9 +586,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/itemzhop/login.fxml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/session.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usersItems.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/itemzhop/CreateAccount.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -680,61 +610,148 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/itemzhop/FileOpearation.java">
+    <entry file="file://$PROJECT_DIR$/src/itemzhop/profilePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+        <state relative-caret-position="-238">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/itemzhop/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="18" column="28" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/itemzhop/CreateItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="68" column="5" lean-forward="true" selection-start-line="55" selection-start-column="4" selection-end-line="68" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/itemzhop/Sale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="42" column="42" lean-forward="true" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+          <folding>
+            <element signature="e#2991#2992#0" expanded="true" />
+            <element signature="e#3061#3062#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/itemzhop/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="204">
           <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/itemzhop/mainFrame.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="66" column="34" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="34" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/session.csv">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
+        <state relative-caret-position="172">
+          <caret line="2569" selection-start-line="2569" selection-end-line="2569" />
+          <folding>
+            <element signature="e#66921#66922#0" expanded="true" />
+            <element signature="e#66966#66967#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/itemzhop/CreateItem.java">
+    <entry file="file://$PROJECT_DIR$/items.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/itemzhop/FileOpearation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="43" column="40" selection-start-line="43" selection-start-column="6" selection-end-line="48" />
+        <state relative-caret-position="829">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/usersItems.csv">
+    <entry file="file://$PROJECT_DIR$/src/itemzhop/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="323">
+          <caret line="231" selection-start-line="231" selection-end-line="231" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/itemzhop/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/itemzhop/OfferItems.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="219" column="12" selection-start-line="219" selection-start-column="12" selection-end-line="219" selection-end-column="12" />
+        <state relative-caret-position="360">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/itemzhop/item.fxml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/itemzhop/createAccount.fxml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/itemzhop/create_Item.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/itemzhop/chooseWindow.fxml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/itemzhop/ItemIncomingOfferController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/itemzhop/profilePage.fxml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/itemzhop/offer_item.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="130" selection-start-line="12" selection-start-column="130" selection-end-line="12" selection-end-column="130" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/itemzhop/mainFrame.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="63" column="144" selection-start-line="63" selection-start-column="122" selection-end-line="63" selection-end-column="144" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/itemzhop/login.fxml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
   </component>
 </project>

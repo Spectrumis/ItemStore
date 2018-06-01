@@ -56,12 +56,12 @@
                               </Pane>
                            </children>
                         </AnchorPane>
-                        <Button fx:id="btn_buy" layoutX="38.0" layoutY="763.0" mnemonicParsing="false" onAction="#itemBuy" prefHeight="48.0" prefWidth="403.0" text="Buy Item">
+                        <Button fx:id="btn_buy" layoutX="38.0" layoutY="763.0" mnemonicParsing="false" onAction="#itemBuy" prefHeight="48.0" prefWidth="403.0" text="Ürünü Al">
                            <font>
                               <Font name="System Bold" size="22.0" />
                            </font>
                         </Button>
-                        <Button fx:id="ahmetlen21" layoutX="580.0" layoutY="763.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="403.0" text="Offer Item">
+                        <Button fx:id="btn_offer_item" layoutX="580.0" layoutY="763.0" mnemonicParsing="false" onAction="#btn_offer_item_clicked" prefHeight="48.0" prefWidth="403.0" text="Teklif Ver">
                            <font>
                               <Font name="System Bold" size="22.0" />
                            </font>
@@ -72,22 +72,17 @@
             </AnchorPane>
             <Pane id="" fx:id="" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="315.0" prefWidth="969.0" AnchorPane.bottomAnchor="518.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="94.0" AnchorPane.topAnchor="0.0">
                <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" height="39.0" layoutX="108.0" layoutY="179.0" stroke="BLACK" strokeType="INSIDE" width="162.0">
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="39.0" layoutX="87.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="162.0">
               <fill>
                 <Color blue="0.200" green="1.000" red="0.839" fx:id="x2" />
               </fill>
             </Rectangle>
-                  <Button fx:id="btnArkadaslarim" layoutX="108.0" layoutY="222.0" mnemonicParsing="false" onAction="#loadItems" prefHeight="39.0" prefWidth="162.0" text="Profilime Git" />
-            <ImageView id="Coins-512.png" fitHeight="54.0" fitWidth="43.0" layoutX="227.0" layoutY="177.0" preserveRatio="true">
+                  <Button fx:id="btnArkadaslarim" layoutX="87.0" layoutY="65.0" mnemonicParsing="false" onAction="#loadItems" prefHeight="39.0" prefWidth="162.0" text="Profilime Git" />
+            <ImageView id="Coins-512.png" fitHeight="54.0" fitWidth="43.0" layoutX="206.0" layoutY="13.0" preserveRatio="true">
               <image>
                 <Image preserveRatio="true" smooth="true" url="@Coins-512.png" />
               </image>
             </ImageView>
-                  <ImageView fitHeight="93.0" fitWidth="162.0" layoutX="143.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@player.png" />
-                     </image>
-                  </ImageView>
                   <Button fx:id="btn_create_item" layoutX="755.0" layoutY="22.0" mnemonicParsing="false" onAction="#btn_create_click" prefHeight="43.0" prefWidth="178.0" text="Yeni Eşya Oluştur" />
                   <Button layoutX="755.0" layoutY="69.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="178.0" text="Kullanıcı Ara" />
                   <Button layoutX="755.0" layoutY="118.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="178.0" text="Para Satın Al" />

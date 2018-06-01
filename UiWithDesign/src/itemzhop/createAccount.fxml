@@ -33,17 +33,17 @@
             <TextField fx:id="txt_userName" onAction="#createActionHandler" GridPane.columnIndex="1" />
             <PasswordField fx:id="txt_password" onAction="#createActionHandler" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <PasswordField fx:id="txt_passRepeat" onAction="#createActionHandler" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Button fx:id="btn_Create" alignment="CENTER" mnemonicParsing="false" onAction="#createActionHandler" prefHeight="26.0" prefWidth="119.0" text="Create" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Button fx:id="btn_cancel" contentDisplay="TOP" mnemonicParsing="false" onAction="#backToDoChoseWindow" prefHeight="26.0" prefWidth="109.0" text="Cancel" GridPane.rowIndex="3" />
-            <Label focusTraversable="false" text="User name">
+            <Button fx:id="btn_Create" alignment="CENTER" mnemonicParsing="false" onAction="#createActionHandler" prefHeight="26.0" prefWidth="119.0" text="Oluştur" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="btn_cancel" contentDisplay="TOP" mnemonicParsing="false" onAction="#backToDoChoseWindow" prefHeight="26.0" prefWidth="109.0" text="İptal Et" GridPane.rowIndex="3" />
+            <Label focusTraversable="false" text="Kullanıcı Adı">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Label>
-            <Label text="Password" GridPane.rowIndex="1">
+            <Label text="Şifre" GridPane.rowIndex="1">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Label>
-            <Label text="Password Again" GridPane.rowIndex="2">
+            <Label text="Tekrar Şifre" GridPane.rowIndex="2">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Label>
