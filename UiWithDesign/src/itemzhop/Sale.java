@@ -37,16 +37,13 @@ public  class Sale implements Comparable<Sale> {
 
     @Override
     public String toString() {
-        return "Sale{" +
-                "id=" + id +
-                ", price=" + price +
-                ", maxPrice=" + maxPrice +
-                ", time=" + time +
-                ", remainingTime='" + remainingTime + '\'' +
-                ", itemName='" + itemName + '\'' +
-                ", seller='" + seller + '\'' +
-                ", lastBidder='" + lastBidder + '\'' +
-                '}';
+        return "Ürün" +
+                ", Adı='" + itemName + '\'' +
+                ", Fiyatı=" + price +
+                ", Maksimum Fiyat=" + maxPrice +
+                ", Süresi=" + remainingTime +
+                ", Satıcı='" + seller + '\'' +
+                ", Son Teklif Veren='" + lastBidder + '\'' ;
     }
 
     private int time;

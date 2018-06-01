@@ -18,6 +18,7 @@ import javafx.stage.Stage;
 import javafx.util.Callback;
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.text.DecimalFormat;
@@ -40,6 +41,7 @@ public class Controller {
     private ArrayList<Sale> shopItemsL = new ArrayList<>();
     @FXML
     private TextField txt_search;
+    Boolean flagOffer = false;
 
     RedBlackTree<Sale> shopItems = new RedBlackTree();
     BinarySearchTree tree = new BinarySearchTree();
@@ -212,6 +214,8 @@ public class Controller {
     @FXML
     public void btn_offer_item_clicked(ActionEvent actionEvent) {
 
+        flagOffer = true;
+
 
         Sale selected = storeTable.getSelectionModel().getSelectedItem();
         for(int i = 0; i < shopItemsL.size(); ++ i) {
@@ -229,6 +233,7 @@ public class Controller {
 
         Parent home_page_parent = null;
         try {
+
             home_page_parent = FXMLLoader.load(getClass().getResource("offer_item.fxml"));
             Scene home_page_scene = new Scene(home_page_parent);
             Stage app_stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
@@ -236,9 +241,12 @@ public class Controller {
             app_stage.setScene(home_page_scene);
             app_stage.show();
 
+            FileOpearation.AppendStringFile("", "TEMP",false);
+
         } catch (IOException e) {
             e.printStackTrace();
         }
+
 
 
 

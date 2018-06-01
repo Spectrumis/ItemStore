@@ -26,7 +26,7 @@ public class FileOpearation {
                 case "TEMP": fileWriter = new FileWriter(TEMP,append); break;
             }
             if(fileWriter != null){
-                fileWriter.write(str+"\n");
+                fileWriter.write(str);
                 fileWriter.close();
             }
         }

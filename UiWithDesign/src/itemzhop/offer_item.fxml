@@ -14,7 +14,7 @@
         <font>
             <Font size="25.0" />
         </font></Button>
-    <TextField fx:id="offer_price" layoutX="383.0" layoutY="91.0" prefHeight="32.0" prefWidth="176.0" />
+    <TextField id="offer_price" fx:id="offer_price" layoutX="383.0" layoutY="91.0" prefHeight="32.0" prefWidth="176.0" />
     <Label layoutX="40.0" layoutY="27.0" prefHeight="40.0" prefWidth="229.0" text="Eşya Bilgileri :" textAlignment="CENTER">
         <font>
             <Font size="28.0" />
@@ -22,9 +22,9 @@
     </Label>
     
         <Button fx:id="btn_back" layoutX="14.0" layoutY="334.0" mnemonicParsing="false" onAction="#btn_back_clicked" prefHeight="32.0" prefWidth="94.0" text="Geri Dön" />
-         <Label fx:id="item_info" layoutX="40.0" layoutY="91.0" prefHeight="204.0" prefWidth="218.0" textAlignment="CENTER">
+         <Label fx:id="item_info" layoutX="40.0" layoutY="91.0" prefHeight="204.0" prefWidth="218.0">
             <font>
-               <Font size="28.0" />
+               <Font size="14.0" />
             </font>
          </Label>
          <Label layoutX="379.0" layoutY="27.0" prefHeight="40.0" prefWidth="183.0" text="Teklif Giriniz" textAlignment="CENTER">
